@@ -1,30 +1,3 @@
-// import {FC} from "react";
-//
-
-//
-//
-// export const Skills: FC = () => (
-//     <section className="mx-auto max-w-5xl px-4 ">
-//         <h2 className="mb-8 underline text-3xl font-semibold text-gray-800 dark:text-white">
-//             Skills
-//         </h2>
-//         <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-//             {skills.map((skill) => (
-//                 <li
-//                     key={skill.name}
-//                     className="flex flex-col items-center rounded-2xl border border-gray-300 dark:border-gray-700
-//                                bg-white dark:bg-gray-800
-//                                text-gray-800 dark:text-gray-200
-//                                p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-//                 >
-//                     <span className="mb-2 text-xl font-medium">{skill.name}</span>
-//                 </li>
-//             ))}
-//         </ul>
-//     </section>
-// );
-//
-//
 
 // components/Skills.tsx
 import { CheckCircle } from "lucide-react";
@@ -59,7 +32,8 @@ export const skills = {
     toolsAndTesting: [
         "Postman 👍",
         "Git / GitHub 👍",
-        "Framer Motion 🎞️",
+        "Vscode 👍",
+        "WebStorm 👍"
     ],
     designAndPrototyping: [
         "Figma 🎨",

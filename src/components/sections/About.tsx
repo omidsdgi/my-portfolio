@@ -1,25 +1,4 @@
-// import {FC} from "react";
-//
-// export const About: FC = () => (
-//     <section className="mx-auto max-w-4xl space-y-4 px-4 leading-relaxed bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
-//         <h2 className="mb-4 underline text-3xl font-semibold text-gray-800 dark:text-white ">
-//             About Me
-//         </h2>
-//
-//         <p className={'font-lato'}>
-//             I'm a motivated front-end developer with practical experience in React and Next.js. I began my coding journey with multiple courses on Udemy and enhanced my skills through the Navax College bootcamp.
-//         </p>
-//         <p>
-//             During the program, I successfully built 8 mini-projects and a fully functional e-commerce app. I'm experienced with API integration, React Hooks, SSR/CSR techniques, and always strive to write clean, maintainable code based on UI/UX designs.
-//         </p>
-//         <p>
-//             I'm a fast learner, effective communicator, and enjoy team collaboration. I'm constantly experimenting with new technologies and building real-world projects to sharpen my skills.
-//         </p>
-//     </section>
-// );
 
-
-// components/About.tsx
 import Image from "next/image";
 import { FC } from "react";
 
@@ -27,12 +6,11 @@ export const About: FC = () => {
     return (
         <section
             id="about"
-            className="mx-auto grid max-w-5xl gap-8 px-4 py-16 md:grid-cols-2 lg:gap-12
+            className="mx-auto grid max-w-6xl gap-8 px-4 py-16 md:grid-cols-2 lg:gap-12
                  bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100
                  transition-colors"
         >
-            {/* تصویر در باکس اسکرول‌دار */}
-            <div className="relative max-h-[400px] overflow-y-auto rounded-lg shadow-inner ring-1 ring-black/10 dark:ring-white/10">
+            <div className="relative max-h-[800px] overflow-y-auto rounded-lg shadow-inner ring-1 ring-black/10 dark:ring-white/10">
                 <Image
                     src="/image/shopping.png"
                     alt="Screenshot of Shopping Project"
@@ -43,31 +21,38 @@ export const About: FC = () => {
                 />
             </div>
 
-            {/* توضیحات درباره من */}
             <div className="space-y-6">
                 <h2 className="text-3xl font-semibold underline decoration-yellow-500 underline-offset-4">
                     About&nbsp;Me
                 </h2>
 
-                <p className="font-lato leading-relaxed">
-                    I'm a motivated front‑end developer with practical experience in React
-                    and Next.js. I began my coding journey with multiple courses on Udemy
-                    and enhanced my skills through the Navax College bootcamp.
+                <p className="font-lato text-lg text-justify leading-relaxed">
+                    I'm a motivated front-end developer with hands-on experience in building scalable web applications
+                    using <strong>React</strong> and <strong>Next.js</strong>. My journey began with self-study through
+                    several front-end development courses on Udemy, followed by an intensive 8-month bootcamp at Navax
+                    College, where I developed 8 mini-projects and a full-fledged e-commerce application.
                 </p>
 
-                <p className="leading-relaxed">
-                    During the program, I successfully built eight mini‑projects and a
-                    fully functional e‑commerce application. I'm experienced with API
-                    integration, React Hooks, and CSR/SSR/SSG techniques, and I always
-                    strive to write clean, maintainable code based on solid UI/UX
-                    principles.
+                <p className="font-lato text-lg text-justify leading-relaxed">
+                    I specialize in working with REST APIs, React Hooks, and understand the nuances of both <strong>Client-Side
+                    Rendering (CSR)</strong> and <strong>Server-Side Rendering (SSR)</strong>. My focus is on writing
+                    clean, reusable, and maintainable code that aligns closely with provided UI/UX designs. I also enjoy
+                    exploring new technologies and actively incorporate them into real-world projects.
+                </p>
+                    <p className="font-lato text-lg text-justify leading-relaxed">
+                    In addition to development, I’ve completed workshops and advanced courses such as the <em>AI
+                    Workshop for Developers</em> (15 hours), focusing on practical use of AI tools in development, and
+                    the <em>Advanced CSS & Sass</em> course, enhancing my layout and design system capabilities.
                 </p>
 
-                <p className="leading-relaxed">
-                    I'm a fast learner, an effective communicator, and I enjoy
-                    collaborating within cross‑functional teams. Continuously experimenting
-                    with new technologies and building real‑world projects helps me
-                    sharpen my skills.
+                <p className="font-lato text-lg text-justify leading-relaxed">
+                    I'm also fluent in English, having completed four years of advanced conversation and technical
+                    communication training at the Iran Language Institute.
+                </p>
+
+                <p className="font-lato text-lg text-justify leading-relaxed">
+                    Overall, I bring a solid combination of technical proficiency, real-world project experience, strong
+                    communication skills, and a passion for learning to every team and project I join.
                 </p>
             </div>
         </section>

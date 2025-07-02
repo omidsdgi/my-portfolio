@@ -1,16 +1,6 @@
 import ProjectItem from "./ProjectItem";
+import {ProjectListProps} from "@/types/ProjectType";
 
-interface Project {
-    title: string;
-    description: string;
-    demoUrl?: string;
-    githubUrl?: string;
-    tags?: string[];
-}
-
-interface ProjectListProps {
-    projects: Project[];
-}
 
 export default function ProjectList({ projects }: ProjectListProps) {
     return (

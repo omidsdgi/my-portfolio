@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const navItems = [
     { href: "#about", label: "درباره من" },
     { href: "#skills", label: "مهارت‌ها" },
-    { href: "#projects", label: "پروژه‌ها" },
+    { href: "/projectspage", label: "پروژه‌ها" },
     { href: "#contact", label: "تماس" },
 ];
 
@@ -23,7 +23,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop navigation */}
-                    <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <ul className="hidden md:flex items-center gap-8 text-lg font-tahoma font-medium">
                         {navItems.map((item) => (
                             <li key={item.href}>
                                 <Link
