@@ -1,52 +1,102 @@
-import {FC} from "react";
+// import {FC} from "react";
+//
 
-const skills = [
-    { name: "Next.js  👍", level: "Intermediate" },
-    { name: "React 👍", level: "Advanced" },
-    { name: "Context  👍", level: "Advanced" },
-    { name: "REST API  👍", level: "Advanced" },
-    { name: "API Routers  👍", level: "Advanced" },
-    { name: "CSR SSR SSG ISR  👍", level: "Advanced" },
-    { name: "Axios  👍", level: "Advanced" },
-    { name: "Tan-Stack-query  👍", level: "Advanced" },
-    { name: "Toast  👍", level: "Advanced" },
-    { name: "React Hook Form  👍", level: "Advanced" },
-    { name: "Redux  👶", level: "beginner" },
-    { name: "TypeScript  👍", level: "Intermediate" },
-    { name: "Postman  👍", level: "Intermediate" },
-    { name: "jQuery  👍", level: "Intermediate" },
-    { name: "Es6  👍", level: "Intermediate" },
-    { name: "TailwindCSS  💪", level: "Advanced" },
-    { name: "Bootstrap  💪", level: "Advanced" },
-    { name: "Git  👍", level: "Intermediate" },
-    { name: "Figma  💪", level: "Advanced" },
-    { name: "Strapi  👍", level: "Intermediate" },
-   { name: "Sass  💪", level: "Advanced" },
-    { name: "Responsive Design  💪", level: "Advanced" },
-    { name: "HTML 💪", level: "Advanced" },
-    { name: "CSS  💪 ✌", level: "Advanced" },
-];
+//
+//
+// export const Skills: FC = () => (
+//     <section className="mx-auto max-w-5xl px-4 ">
+//         <h2 className="mb-8 underline text-3xl font-semibold text-gray-800 dark:text-white">
+//             Skills
+//         </h2>
+//         <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+//             {skills.map((skill) => (
+//                 <li
+//                     key={skill.name}
+//                     className="flex flex-col items-center rounded-2xl border border-gray-300 dark:border-gray-700
+//                                bg-white dark:bg-gray-800
+//                                text-gray-800 dark:text-gray-200
+//                                p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+//                 >
+//                     <span className="mb-2 text-xl font-medium">{skill.name}</span>
+//                 </li>
+//             ))}
+//         </ul>
+//     </section>
+// );
+//
+//
+
+// components/Skills.tsx
+import { CheckCircle } from "lucide-react";
+
+export const skills = {
+    frontendFrameworks: [
+        "Next.js 👍",
+        "React 👍",
+        "Context API 👍",
+        "API Routes 🛣️",
+        "CSR / SSR / SSG / ISR 💡",
+        "Redux 👶",
+    ],
+    stateAndDataManagement: [
+        "React Hook Form 👍",
+        "TanStack Query 👍",
+        "Axios 👍",
+    ],
+    stylingAndUI: [
+        "TailwindCSS 💪",
+        "Bootstrap 💪",
+        "Sass / SCSS 💪",
+        "Responsive Design 📱",
+    ],
+    languagesAndCoreWeb: [
+        "HTML5 💪",
+        "CSS3 💪",
+        "JavaScript (ES6+) 👍",
+        "TypeScript 👍",
+        "jQuery 🔁",
+    ],
+    toolsAndTesting: [
+        "Postman 👍",
+        "Git / GitHub 👍",
+        "Framer Motion 🎞️",
+    ],
+    designAndPrototyping: [
+        "Figma 🎨",
+    ],
+    deploymentAndBackend: [
+        "Vercel 🚀",
+        "Strapi (Headless CMS) 👍",
+    ],
+};
 
 
-export const Skills: FC = () => (
-    <section className="mx-auto max-w-5xl px-4 ">
-        <h2 className="mb-8 inline-block border-b-4 text-3xl font-semibold text-gray-800 dark:text-white">
-            Skills
-        </h2>
-        <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {skills.map((skill) => (
-                <li
-                    key={skill.name}
-                    className="flex flex-col items-center rounded-2xl border border-gray-300 dark:border-gray-700
-                               bg-white dark:bg-gray-800
-                               text-gray-800 dark:text-gray-200
-                               p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-                >
-                    <span className="mb-2 text-xl font-medium">{skill.name}</span>
-                </li>
-            ))}
-        </ul>
-    </section>
-);
+export default function Skills() {
+    return (
+        <section id="skills" className="py-16 bg-white dark:bg-zinc-900 transition-colors">
+            <div className="max-w-5xl mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-10">
+                    💼 My Skills
+                </h2>
 
-
+                <div className="grid md:grid-cols-3 gap-8">
+                    {Object.entries(skills).map(([category, items]) => (
+                        <div key={category} className="bg-gray-50 dark:bg-zinc-800 rounded-2xl shadow p-6">
+                            <h3 className="text-xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">
+                                {category}
+                            </h3>
+                            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                {items.map((skill) => (
+                                    <li key={skill} className="flex items-center gap-2">
+                                        <CheckCircle className="text-yellow-500 dark:text-yellow-400 w-4 h-4" />
+                                        <span>{skill}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
