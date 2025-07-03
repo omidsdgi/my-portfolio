@@ -7,7 +7,7 @@ const navItems = [
     { href: "#about", label: "درباره من" },
     { href: "#skills", label: "مهارت‌ها" },
     { href: "/projectspage", label: "پروژه‌ها" },
-    { href: "#contact", label: "تماس" },
+    { href: "#footer", label: "تماس" },
 ];
 
 export default function Navbar() {
@@ -15,13 +15,13 @@ export default function Navbar() {
 
     return (
         <header
-            className="sticky top-0 z-50 dark:bg-background/40 backdrop-blur shadow-md transition-shadow duration-300">
-            <li className="md:ml-4">
-                <ThemeToggle/>
-            </li>
+            className="sticky top-0 z-50 bg-light-background text-light-text shadow-md dark:bg-gray-900 dark:text-gray-100  backdrop-blur transition-shadow duration-300">
 
             <nav className="mx-auto max-w-5xl px-4">
                 <div className="flex items-center justify-between h-16">
+            <li className="md:ml-4">
+                <ThemeToggle/>
+            </li>
                     <Link href="/" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
                         OMID.developer
                     </Link>

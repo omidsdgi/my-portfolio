@@ -55,8 +55,8 @@ export default function Skills() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {Object.entries(skills).map(([category, items]) => (
-                        <div key={category} className="bg-gray-50 dark:bg-zinc-800 rounded-2xl shadow p-6">
-                            <h3 className="text-xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">
+                        <div key={category} className="bg-gray-500 dark:bg-zinc-800 rounded-2xl shadow p-6">
+                            <h3 className="text-xl font-bold text-yellow-300 dark:text-yellow-400 mb-4">
                                 {category}
                             </h3>
                             <ul className="space-y-2 bg-white text-gray-700 dark:text-black">
