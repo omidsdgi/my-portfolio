@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ProjectsPage() {
     return (
-        <main className="max-w-7xl bg-[#555555]  mx-auto px-4 py-12">
+        <main className="max-w-7xl bg-[#555555] mt-5 rounded-3xl mx-auto px-4 py-12">
             <h1 className="text-5xl text-white font-quicksand font-bold mb-8 dark:text-yellow-300" >Projects</h1>
 
             <div className="grid md:grid-cols-2 gap-12 ">
