@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Hero: FC = () => (
     <section
-        className="bg-background dark:bg-gray-900 text-gray-800 dark:text-gray-200 max-h-[700px] mt-10 flex flex-col justify-evenly items-center px-6 text-center">
+        className="mx-auto bg-[#fdf2e9] dark:bg-gray-900 text-gray-800 dark:text-gray-200 max-h-[700px] max-w-6xl mt-10 flex flex-col justify-evenly items-center p-6 text-center">
         <div className="text-center mb-10 space-y-3">
             {/* متن انگلیسی */}
             <p className="max-w-3xl mx-auto font-quicksand text-base md:text-lg font-bold italic text-gray-700 dark:text-gray-300">

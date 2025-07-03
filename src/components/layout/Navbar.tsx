@@ -18,8 +18,8 @@ export default function Navbar() {
             <nav className="mx-auto max-w-5xl px-4">
                 <div className="flex items-center justify-between h-16">
                     {/* Brand / Logo */}
-                    <Link href="/" className="text-2xl font-bold tracking-tight text-yellow-600 dark:text-yellow-400">
-                        omid.dev
+                    <Link href="/" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
+                        OMID.developer
                     </Link>
 
                     {/* Desktop navigation */}
@@ -28,21 +28,21 @@ export default function Navbar() {
                             <li key={item.href}>
                                 <Link
                                     href={item.href}
-                                    className="hover:text-yellow-500 dark:hover:text-yellow-300 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 rounded-lg px-1"
+                                    className="rounded-lg border border-yellow-500 dark:border-yellow-400 px-4 py-2 text-yellow-600 dark:text-white hover:bg-yellow-500 dark:hover:bg-yellow-400 hover:text-background dark:hover:text-background transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500"
                                 >
                                     {item.label}
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <a
-                                href="/resume.pdf"
-                                target="_blank"
-                                className="rounded-lg border border-yellow-500 dark:border-yellow-400 px-4 py-2 text-yellow-600 dark:text-yellow-400 hover:bg-yellow-500 dark:hover:bg-yellow-400 hover:text-background dark:hover:text-background transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500"
-                            >
-                                رزومه من
-                            </a>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <a*/}
+                        {/*        href="/resume.pdf"*/}
+                        {/*        target="_blank"*/}
+                        {/*        className="rounded-lg border border-yellow-500 dark:border-yellow-400 px-4 py-2 text-yellow-600 dark:text-yellow-400 hover:bg-yellow-500 dark:hover:bg-yellow-400 hover:text-background dark:hover:text-background transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500"*/}
+                        {/*    >*/}
+                        {/*        رزومه من*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
                     </ul>
 
                     {/* Mobile burger icon */}

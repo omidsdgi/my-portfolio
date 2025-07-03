@@ -47,7 +47,7 @@ export const skills = {
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-16 bg-white dark:bg-zinc-900 transition-colors">
+        <section id="skills" className="mx-auto py-16 bg-[#fdf2e9] max-w-6xl dark:bg-zinc-900 transition-colors">
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-10">
                     💼 My Skills
@@ -59,10 +59,10 @@ export default function Skills() {
                             <h3 className="text-xl font-bold text-yellow-600 dark:text-yellow-400 mb-4">
                                 {category}
                             </h3>
-                            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <ul className="space-y-2 bg-white text-gray-700 dark:text-black">
                                 {items.map((skill) => (
-                                    <li key={skill} className="flex items-center gap-2">
-                                        <CheckCircle className="text-yellow-500 dark:text-yellow-400 w-4 h-4" />
+                                    <li key={skill} className="flex items-center gap-2 p-2">
+                                        <CheckCircle className="text-yellow-500 dark:text-black w-4 h-4" />
                                         <span>{skill}</span>
                                     </li>
                                 ))}
