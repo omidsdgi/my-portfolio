@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import {FC, useState} from "react";
+import {ChevronLeft, ChevronRight} from "lucide-react";
 
 export const About: FC = () => {
     const [lang, setLang] = useState<'fa' | 'en'>('en');
@@ -26,18 +27,33 @@ export const About: FC = () => {
                 <div className="space-y-6">
                     <div>
                         <div className="flex justify-between mb-4">
-                            <button onClick={() => setLang('en')} className="px-2"><h2
-                                className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] ${ lang === "en"? "border-[#cf711f]": "border-transparent" }`}>
-                                About&nbsp;Me
-                            </h2></button>
-                            <button onClick={() => setLang('fa')} className="px-2"><h2
-                                className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] ${ lang === "fa"? "border-[#cf711f]": "border-transparent" }`}>
-                                دربارۀ من
-                            </h2></button>
+                            {/* English Button */}
+                            <button onClick={() => setLang('en')} className="px-2">
+                                <h2
+                                    className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
+                                        lang === "en" ? "border-[#cf711f]" : "border-transparent"
+                                    }`}
+                                >
+                                    About&nbsp;Me
+                                    <ChevronRight size={24}/>
+                                </h2>
+                            </button>
+
+                            {/* Persian Button */}
+                            <button onClick={() => setLang('fa')} className="px-2">
+                                <h2
+                                    className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
+                                        lang === "fa" ? "border-[#cf711f]" : "border-transparent"
+                                    }`}
+                                >
+                                    <ChevronLeft size={24}/>
+                                    دربارۀ من
+                                </h2>
+                            </button>
                         </div>
                         {lang === 'fa' ? (
                             <div dir="rtl" className="text-justify font-tahoma text-x leading-loose">
-                            <p className="py-2"> به عنوان یک توسعه‌ دهنده فرانت‌اند با انگیزه‌، تجربه عملی در ساخت
+                                <p className="py-2"> به عنوان یک توسعه‌ دهنده فرانت‌اند با انگیزه‌، تجربه عملی در ساخت
                                     وب‌اپلیکیشن‌های مقیاس‌پذیر
                                     با استفاده از<strong>React</strong> و <strong>Next.js</strong> را دارم. مسیر یادگیری
                                     من با

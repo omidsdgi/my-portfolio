@@ -18,7 +18,7 @@ export const Hero: FC = () => (
         <div
             className="mb-8 rounded-full overflow-hidden border-4 border-yellow-600 dark:border-yellow-400 w-40 h-40 mx-auto shadow-lg">
             <Image
-                src="/image/Omid.jpg"
+                src="/image/Omid.png"
                 alt="Avatar"
                 width={160}
                 height={160}

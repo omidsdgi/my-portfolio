@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import {Lato, Quicksand} from "next/font/google";
-import theme from "tailwindcss/defaultTheme";
 import {ThemeProvider} from "next-themes";
 
 const quicksand=Quicksand({
