@@ -10,18 +10,16 @@ export const About: FC = () => {
 
             <section
                 id="about"
-                className="mx-auto grid items-center bg-[#fdf2e9] max-w-6xl gap-8 px-4 py-16 lg:grid-cols-2 lg:gap-12
-                  text-gray-900 dark:bg-gray-900 dark:text-gray-100
-                 transition-colors">
+                className="mx-auto max-w-6xl px-4 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center
+                 bg-[#fdf2e9] dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
                 <div
-                    className="relative max-h-[600px] overflow-y-auto rounded-lg shadow-inner ring-1 ring-black/10 dark:ring-white/10">
+                    className="relative w-full aspect-[3/4] sm:aspect-[4/5] md:aspect-[5/6] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-lg">
                     <Image
                         src="/image/shopping.png"
                         alt="Screenshot of Shopping Project"
-                        width={640}
-                        height={1600}
+                        fill
                         priority
-                        className="w-full h-auto object-top rounded-lg"
+                        className="object-cover object-top rounded-lg"
                     />
                 </div>
                 <div className="space-y-6">
@@ -30,7 +28,7 @@ export const About: FC = () => {
                             {/* English Button */}
                             <button onClick={() => setLang('en')} className="px-2">
                                 <h2
-                                    className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
+                                    className={`text-xl  lg:text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
                                         lang === "en" ? "border-[#cf711f]" : "border-transparent"
                                     }`}
                                 >
@@ -42,7 +40,7 @@ export const About: FC = () => {
                             {/* Persian Button */}
                             <button onClick={() => setLang('fa')} className="px-2">
                                 <h2
-                                    className={`text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
+                                    className={`text-xl  lg:text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
                                         lang === "fa" ? "border-[#cf711f]" : "border-transparent"
                                     }`}
                                 >
@@ -52,7 +50,7 @@ export const About: FC = () => {
                             </button>
                         </div>
                         {lang === 'fa' ? (
-                            <div dir="rtl" className="text-justify font-tahoma text-x leading-loose">
+                            <div dir="rtl" className="text-justify font-tahoma text-x leading-loose space-y-4">
                                 <p className="py-2"> به عنوان یک توسعه‌ دهنده فرانت‌اند با انگیزه‌، تجربه عملی در ساخت
                                     وب‌اپلیکیشن‌های مقیاس‌پذیر
                                     با استفاده از<strong>React</strong> و <strong>Next.js</strong> را دارم. مسیر یادگیری
