@@ -4,43 +4,43 @@ import { CheckCircle } from "lucide-react";
 
 export const skills = {
     frontendFrameworks: [
-        "Next.js 👍",
-        "React 👍",
-        "Context API 👍",
-        "API Routes 🛣️",
-        "CSR / SSR / SSG / ISR 💡",
-        "Redux 👶",
+        "Next.js",
+        "React ",
+        "Context API ",
+        "API Routes",
+        "CSR / SSR / SSG / ISR",
+        "Redux",
     ],
     stateAndDataManagement: [
-        "React Hook Form 👍",
-        "TanStack Query 👍",
-        "Axios 👍",
+        "React Hook Form ",
+        "TanStack Query ",
+        "Axios ",
     ],
     stylingAndUI: [
-        "TailwindCSS 💪",
-        "Bootstrap 💪",
-        "Sass / SCSS 💪",
-        "Responsive Design 📱",
+        "TailwindCSS ",
+        "Bootstrap ",
+        "Sass / SCSS ",
+        "Responsive Design",
     ],
     languagesAndCoreWeb: [
-        "HTML5 💪",
-        "CSS3 💪",
-        "JavaScript (ES6+) 👍",
-        "TypeScript 👍",
-        "jQuery 🔁",
+        "HTML5 ",
+        "CSS3 ",
+        "JavaScript (ES6+) ",
+        "TypeScript ",
+        "jQuery",
     ],
     toolsAndTesting: [
-        "Postman 👍",
-        "Git / GitHub 👍",
-        "Vscode 👍",
-        "WebStorm 👍"
+        "Postman ",
+        "Git / GitHub ",
+        "Vscode ",
+        "WebStorm "
     ],
     designAndPrototyping: [
-        "Figma 🎨",
+        "Figma",
     ],
     deploymentAndBackend: [
-        "Vercel 🚀",
-        "Strapi (Headless CMS) 👍",
+        "Vercel",
+        "Strapi (Headless CMS) ",
     ],
 };
 

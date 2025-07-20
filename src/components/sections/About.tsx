@@ -28,8 +28,8 @@ export const About: FC = () => {
                             {/* English Button */}
                             <button onClick={() => setLang('en')} className="px-2">
                                 <h2
-                                    className={`text-xl  lg:text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
-                                        lang === "en" ? "border-[#cf711f]" : "border-transparent"
+                                    className={`btn-text text-xl text-[#55c57a] lg:text-3xl font-semibold p-4 py-2 rounded transition-all border-[8px] border-b-[#55c57a] flex items-center gap-2 hover:bg-[#28b485] hover:text-white hover:-translate-y-1 active:bg-[#28b485] active:border-2 ${
+                                        lang === "en" ? "border-[#55c57a]" : "border-transparent"
                                     }`}
                                 >
                                     About&nbsp;Me
@@ -40,8 +40,8 @@ export const About: FC = () => {
                             {/* Persian Button */}
                             <button onClick={() => setLang('fa')} className="px-2">
                                 <h2
-                                    className={`text-xl  lg:text-3xl font-semibold px-4 py-2 rounded transition-all border-[8px] flex items-center gap-2 ${
-                                        lang === "fa" ? "border-[#cf711f]" : "border-transparent"
+                                    className={`btn-text text-xl text-[#55c57a] lg:text-3xl font-semibold p-4 py-2 rounded transition-all border-[8px] border-b-[#55c57a] flex items-center gap-2 hover:bg-[#28b485] hover:text-white hover:-translate-y-1 active:bg-[#28b485] active:border-2 ${
+                                        lang === "fa" ? "border-[#55c57a]" : "border-transparent"
                                     }`}
                                 >
                                     <ChevronLeft size={24}/>

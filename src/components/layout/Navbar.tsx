@@ -6,7 +6,7 @@ import ThemeToggle from "@/components/ui/ThemeToggles";
 const navItems = [
     { href: "#about", label: "درباره من" },
     { href: "#skills", label: "مهارت‌ها" },
-    { href: "/projectspage", label: "پروژه‌ها" },
+    { href: "/projectsPage", label: "پروژه‌ها" },
     { href: "#footer", label: "تماس" },
 ];
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                {/* Mobile dropdown menu */}
+
                 {isOpen && (
                     <ul className="md:hidden  flex flex-col gap-4 pb-6 animate-fade-in">
                         {navItems.map((item) => (
