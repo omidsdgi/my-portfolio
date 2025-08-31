@@ -13,7 +13,13 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/omidsdgi/main-project-shopping",
 
     },
+    {
+        title: "React Quiz",
+        description: "React Quiz – اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript است. این پروژه یک سیستم پویا برای پاسخ‌دهی به سوالات چندگزینه‌ای ارائه می‌دهد که امکان مشاهده فوری نتیجه و امتیاز نهایی را فراهم می‌کند. سوالات بر اساس مباحث ارائه شده در دوره Ultimate React Course (Udemy) طراحی شده‌اند تا درک عمیق و پیشرفته‌ای از مفاهیم React به نمایش بگذارند، از جمله: state management با useReducer، مدیریت فرم‌ها، اصول component lifecycle، hooks پیشرفته (useMemo، useCallback، useEffect)، مدیریت مسیرها با React Router و بهینه‌سازی عملکرد React.",
+        demoUrl: "https://react-quiz-blush-five.vercel.app/",
+        githubUrl: "https://github.com/omidsdgi/React-Quiz",
 
+    },
     {
         title: "React Weather App",
         description: "یک اپلیکیشن واکنش‌گرا برای نمایش اطلاعات آب‌وهوا با استفاده از OpenWeather API. این پروژه با React و TypeScript توسعه داده شده و با تمرکز بر تجربه کاربری طراحی شده است. کاربر می‌تواند با وارد کردن نام شهر، اطلاعاتی مانند دمای فعلی، وضعیت آسمان، رطوبت، و سرعت باد را مشاهده کند. از آیکون‌های متحرک برای نمایش وضعیت آب‌وهوا (مانند بارانی، آفتابی و ابری) استفاده شده که تجربه‌ی بصری جذابی فراهم می‌کند.",
