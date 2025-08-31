@@ -57,7 +57,7 @@ export const About: FC = () => {
                                     من با
                                     دوره‌های آنلاین فرانت‌اند در سایت Udemy آغاز شد و سپس با شرکت در بوت‌کمپ Navax
                                     college ادامه
-                                    یافت، تا جایی که موفق به توسعه ۸ مینی‌پروژه و یک فروشگاه اینترنتی کامل شدم.</p>
+                                    یافت، تا جایی که موفق به پیاده‌سازی ۸ پروژه عملی از جمله فروشگاه آنلاین کامل و سیستم آزمون‌سازی با طراحی شخصی ۳۰۰+ سوال تخصصی React که منعکس‌کننده درک عمیق از مفاهیم پیچیده و کاربردی این تکنولوژی است، شدم</p>
 
                                 <p className="py-2"> تخصص من در کار با REST APIها، استفاده از React Hooks، و درک دقیق
                                     از <strong>رندر سمت کلاینت(CSR)</strong> و <strong>رندر سمت سرور (SSR)</strong> است.
@@ -87,8 +87,7 @@ export const About: FC = () => {
                                     self-study through
                                     several front-end development courses on Udemy, followed by an intensive 8-month
                                     bootcamp at Navax
-                                    College, where I developed 8 mini-projects and a full-fledged e-commerce
-                                    application.
+                                    College, where I Built 8 comprehensive projects including an e-commerce platform and quiz application featuring 300+ self-authored React questions, reflecting profound understanding of complex framework principles and best practices
                                 </p>
 
                                 <p className="py-2">
