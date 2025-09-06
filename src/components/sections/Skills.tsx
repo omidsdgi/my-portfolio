@@ -3,47 +3,49 @@
 import { CheckCircle } from "lucide-react";
 
 export const skills = {
-    frontendFrameworks: [
-        "Next.js",
-        "React ",
-        "Context API ",
-        "API Routes",
-        "CSR / SSR / SSG / ISR",
-        "Redux",
-    ],
-    stateAndDataManagement: [
-        "React Hook Form ",
-        "TanStack Query ",
-        "Axios ",
-    ],
-    stylingAndUI: [
-        "TailwindCSS ",
-        "Bootstrap ",
-        "Sass / SCSS ",
-        "Responsive Design",
-    ],
-    languagesAndCoreWeb: [
-        "HTML5 ",
-        "CSS3 ",
-        "JavaScript (ES6+) ",
-        "TypeScript ",
+    coreWebTechnologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript (ES6+)",
         "jQuery",
+        "TypeScript",
     ],
-    toolsAndTesting: [
-        "Postman ",
-        "Git / GitHub ",
-        "Vscode ",
-        "WebStorm "
+    reactEcosystem: [
+        "React",
+        "Next.js",
+        "React Router",
+        "Context API",
+        "React Hook Form",
     ],
-    designAndPrototyping: [
+    stateManagement: [
+        "Redux",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Axios",
+    ],
+    renderingAndArchitecture: [
+        "CSR / SSR / SSG / ISR",
+        "API Routes",
+    ],
+    stylingAndDesign: [
+        "TailwindCSS",
+        "Bootstrap",
+        "Sass / SCSS",
+        "Css Module",
+        "Responsive Design",
         "Figma",
     ],
-    deploymentAndBackend: [
+    developmentTools: [
+        "Git / GitHub",
+        "Vscode",
+        "WebStorm",
+        "Postman",
+    ],
+    deploymentAndCMS: [
         "Vercel",
-        "Strapi (Headless CMS) ",
+        "Strapi (Headless CMS)",
     ],
 };
-
 
 export default function Skills() {
     return (

@@ -68,7 +68,7 @@ export const About: FC = () => {
                                 <p className="py-2">
                                     علاوه بر حوزه فرانت اند، در کارگاه‌ها و دوره‌های پیشرفته‌ای مانند "کارگاه هوش مصنوعی
                                     برای توسعه‌دهندگان" شرکت کرده‌ام که تمرکز آن بر استفاده عملی از ابزارهای AI در
-                                    فرآیند توسعه بود. همچنین آموزش پیشرفته CSS و Sass مربوط به دوره های Udemy را
+                                    فرآیند توسعه بود. همچنین 150 ساعت آموزش پیشرفته CSS و Sass و React مربوط به دوره های Udemy را
                                     گذرانده‌ام که باعث تقویت توانایی من در طراحی چیدمان‌های مدرن و سیستم‌های طراحی شده
                                     است. در زمینه زبان انگلیسی نیز دارای سطح پیشرفته هستم و چهار سال آموزش مکالمه و
                                     ارتباطات فنی را در کانون زبان ایران گذرانده‌ام.
@@ -104,7 +104,7 @@ export const About: FC = () => {
                                     the <em>AI
                                     Workshop for Developers</em>, focusing on practical use of AI tools in development,
                                     and
-                                    the <em>Advanced CSS & Sass</em> course, enhancing my layout and design system
+                                    the <em>Advanced CSS & Sass & React</em> course, enhancing my layout and design system
                                     capabilities.
                                     I'm also fluent in English, having completed four years of advanced conversation and
                                     technical
