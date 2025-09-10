@@ -28,6 +28,7 @@ export const skills = {
         "API Routes",
     ],
     stylingAndDesign: [
+        "styled-components",
         "TailwindCSS",
         "Bootstrap",
         "Sass / SCSS",
@@ -42,8 +43,9 @@ export const skills = {
         "Postman",
     ],
     deploymentAndCMS: [
-        "Vercel",
+        "Supabase",
         "Strapi (Headless CMS)",
+        "Vercel",
     ],
 };
 
