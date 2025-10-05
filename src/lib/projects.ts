@@ -7,6 +7,13 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "The Wild Oasis",
+        description: " یک داشبورد فرانت‌اند واکنش‌گرا است که با استفاده از React، React Query، Recharts و Styled Components ساخته شده است. این پروژه داده‌های رزرو، فعالیت‌های مهمانان و فروش را به‌صورت لحظه‌ای در رابط کاربری مدرن و با پشتیبانی از حالت تاریک و روشن نمایش می‌دهد و فرآیندهایی مانند چک‌این و چک‌اوت را ساده و کاربرپسند می‌کند.",
+        demoUrl: "the-wild-oasis-sigma-livid.vercel.app",
+        githubUrl: "https://github.com/omidsdgi/world-wise",
+
+    },
+    {
         title: "Main project shopping",
         description: "سایت فروشگاهی مدرن با تمرکز بر تجربه کاربری و عملکرد بهینه. این پروژه با استفاده از Next.js و TypeScript توسعه داده شده و دارای قابلیت‌هایی مانند سبد خرید، نمایش محصولات، فیلتر دسته‌بندی، و طراحی واکنش‌گرا است. این سیستم از React Context برای مدیریت مؤثر وضعیت سبد خرید و API‌های RESTful برای تعامل با سرور بهره می‌برد، و با استفاده از تکنیک‌های lazy loading، ریسپانسیو کامل و اعتبارسنجی قوی روی فرم‌ها، تجربه‌ای سریع و مطمئن را به کاربران ارائه می‌دهد. داده‌ها از طریق CMS مدیریت می‌شوند و رابط کاربری با تمرکز بر سادگی و وضوح طراحی شده است.",
         demoUrl: "https://main-project-shopping.vercel.app",
