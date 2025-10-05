@@ -9,7 +9,7 @@ export const projects: Project[] = [
     {
         title: "The Wild Oasis",
         description: " یک داشبورد فرانت‌اند واکنش‌گرا است که با استفاده از React، React Query، Recharts و Styled Components ساخته شده است. این پروژه داده‌های رزرو، فعالیت‌های مهمانان و فروش را به‌صورت لحظه‌ای در رابط کاربری مدرن و با پشتیبانی از حالت تاریک و روشن نمایش می‌دهد و فرآیندهایی مانند چک‌این و چک‌اوت را ساده و کاربرپسند می‌کند.",
-        demoUrl: "the-wild-oasis-sigma-livid.vercel.app",
+        demoUrl: "https://the-wild-oasis-sigma-livid.vercel.app",
         githubUrl: "https://github.com/omidsdgi/world-wise",
 
     },
