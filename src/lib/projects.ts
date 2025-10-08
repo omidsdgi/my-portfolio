@@ -30,7 +30,7 @@ export const projects: Project[] = [
     {
         title: "Fast React Pizza",
         description: "Fast React Pizza یک وب‌اپلیکیشن مدرن برای شبیه‌سازی سیستم سفارش آنلاین پیتزا است. این پروژه با استفاده از React و Vite ساخته شده و از React Router برای مدیریت مسیرها (Route، Loader، Action و useFetcher) بهره می‌برد. مدیریت استیت با Redux Toolkit انجام شده که شامل عملیات پیشرفته‌ی سبد خرید مثل افزودن، حذف، تغییر تعداد و محاسبه قیمت کل است. برای استایل‌دهی از Tailwind CSS استفاده شده که منجر به رابط کاربری واکنش‌گرا و مدرن شده است. همچنین در این پروژه فرم‌ها با اعتبارسنجی سفارشی پیاده‌سازی شده و از قابلیت‌های Redux DevTools جهت دیباگ استفاده گردید.",
-        demoUrl: "https://fast-react-pizza-opal.vercel.app/" ,
+        demoUrl: "https://fast-react-pizzas-navy.vercel.app/" ,
         githubUrl: "https://github.com/omidsdgi/fast-react-pizza",
 
     },
