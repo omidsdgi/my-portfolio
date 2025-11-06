@@ -23,7 +23,7 @@ export const projects: Project[] = [
     {
         title: "React Quiz",
         description: "React Quiz – اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript است. این پروژه یک سیستم پویا برای پاسخ‌دهی به سوالات چندگزینه‌ای ارائه می‌دهد که امکان مشاهده فوری نتیجه و امتیاز نهایی را فراهم می‌کند. سوالات بر اساس مباحث ارائه شده در دوره Ultimate React Course (Udemy) طراحی شده‌اند تا درک عمیق و پیشرفته‌ای از مفاهیم React به نمایش بگذارند، از جمله: state management با useReducer، مدیریت فرم‌ها، اصول component lifecycle، hooks پیشرفته (useMemo، useCallback، useEffect)، مدیریت مسیرها با React Router و بهینه‌سازی عملکرد React.",
-        demoUrl: "https://react-quiz-im4r.vercel.app/",
+        demoUrl: "https://react-quiz-fg73.vercel.app/",
         githubUrl: "https://github.com/omidsdgi/React-Quiz",
 
     },
