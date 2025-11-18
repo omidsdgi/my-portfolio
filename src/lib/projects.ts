@@ -14,12 +14,20 @@ export const projects: Project[] = [
 
     },
     {
+        title: "The Wild Oasis Website",
+        description: "وب‌سایت The Wild Oasis با فریم‌ورک Next.js (App Router) و TypeScript توسعه یافته است. این پروژه با تمرکز بر ساختار ماژولار و بهینه‌سازی تجربه کاربری پیاده‌سازی شده و از قابلیت‌های SSR (Server-Side Rendering) و Static Generation برای عملکرد سریع‌تر و سئو بهتر بهره می‌برد. در این وب‌سایت اصول طراحی واکنش‌گرا (Responsive Design) به‌صورت کامل رعایت شده و برای استقرار نهایی از پلتفرم Vercel استفاده شده است.",
+        demoUrl: "https://the-wild-oasis-website-six-zeta.vercel.app",
+        githubUrl: "https://github.com/omidsdgi/the-wild-oasis-website",
+
+    },
+    {
         title: "Main project shopping",
         description: "سایت فروشگاهی مدرن با تمرکز بر تجربه کاربری و عملکرد بهینه. این پروژه با استفاده از Next.js و TypeScript توسعه داده شده و دارای قابلیت‌هایی مانند سبد خرید، نمایش محصولات، فیلتر دسته‌بندی، و طراحی واکنش‌گرا است. این سیستم از React Context برای مدیریت مؤثر وضعیت سبد خرید و API‌های RESTful برای تعامل با سرور بهره می‌برد، و با استفاده از تکنیک‌های lazy loading، ریسپانسیو کامل و اعتبارسنجی قوی روی فرم‌ها، تجربه‌ای سریع و مطمئن را به کاربران ارائه می‌دهد. داده‌ها از طریق CMS مدیریت می‌شوند و رابط کاربری با تمرکز بر سادگی و وضوح طراحی شده است.",
         demoUrl: "https://main-project-shopping.vercel.app",
         githubUrl: "https://github.com/omidsdgi/main-project-shopping",
 
     },
+
     {
         title: "React Quiz",
         description: "React Quiz – اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript است. این پروژه یک سیستم پویا برای پاسخ‌دهی به سوالات چندگزینه‌ای ارائه می‌دهد که امکان مشاهده فوری نتیجه و امتیاز نهایی را فراهم می‌کند. سوالات بر اساس مباحث ارائه شده در دوره Ultimate React Course (Udemy) طراحی شده‌اند تا درک عمیق و پیشرفته‌ای از مفاهیم React به نمایش بگذارند، از جمله: state management با useReducer، مدیریت فرم‌ها، اصول component lifecycle، hooks پیشرفته (useMemo، useCallback، useEffect)، مدیریت مسیرها با React Router و بهینه‌سازی عملکرد React.",
