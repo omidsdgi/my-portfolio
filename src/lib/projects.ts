@@ -45,7 +45,7 @@ export const projects: Project[] = [
     {
         title: "React Weather App",
         description: "یک اپلیکیشن واکنش‌گرا برای نمایش اطلاعات آب‌وهوا با استفاده از OpenWeather API. این پروژه با React و TypeScript توسعه داده شده و با تمرکز بر تجربه کاربری طراحی شده است. کاربر می‌تواند با وارد کردن نام شهر، اطلاعاتی مانند دمای فعلی، وضعیت آسمان، رطوبت، و سرعت باد را مشاهده کند. از آیکون‌های متحرک برای نمایش وضعیت آب‌وهوا (مانند بارانی، آفتابی و ابری) استفاده شده که تجربه‌ی بصری جذابی فراهم می‌کند.",
-        demoUrl: "https://weather-api-ihbu.vercel.app///",
+        demoUrl: "https://weather-api-ihbu.vercel.app",
         githubUrl: "https://github.com/omidsdgi/weather-api",
     },
     {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
 
             ". در پشت صحنه، هوک اختصاصی ‎useMovies با استفاده از fetch و ‎AbortController داده‌های سرویس ‎OMDb را واکشی کرده و وضعیت‌های «در حال بارگیری»، «خطا» و فهرست فیلم‌ها را مدیریت می‌کند" +
             ". برای ماندگاری داده‌ها،‎useLocalStorageState مقادیر را در ‎localStorage ذخیره کرده و با هر تغییر، مقدار سریالایز‎شده را به‌روزرسانی می‌کند. برنامه قابلیت جست‌وجو، امتیازدهی ★و ذخیرهٔ آفلاین فهرست فیلم‌های دیده‌شده را در یک کدبیس تمیز و ماژولار پیاده می‌کند.",
-        demoUrl: "https://movie-watch-list-gull.vercel.app//",
+        demoUrl: "https://movie-watch-list-gull.vercel.app",
         githubUrl: "https://github.com/omidsdgi/movieWatchList",
     },
     {
