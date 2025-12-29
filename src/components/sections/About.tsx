@@ -57,7 +57,7 @@ export const About: FC = () => {
                                     من با
                                     دوره‌های آنلاین فرانت‌اند در سایت Udemy آغاز شد و سپس با شرکت در بوت‌کمپ Navax
                                     college ادامه
-                                    یافت، تا جایی که موفق به پیاده‌سازی ۸ پروژه عملی از جمله فروشگاه آنلاین کامل و سیستم آزمون‌سازی با طراحی شخصی ۳۰۰+ سوال تخصصی React که منعکس‌کننده درک عمیق از مفاهیم پیچیده و کاربردی این تکنولوژی است، شدم</p>
+                                    یافت، تا جایی که موفق به پیاده‌سازی ۱۵ پروژه عملی از جمله فروشگاه آنلاین کامل و سیستم آزمون‌سازی با طراحی شخصی ۳۰۰+ سوال تخصصی React که منعکس‌کننده درک عمیق از مفاهیم پیچیده و کاربردی این تکنولوژی است، شدم</p>
 
                                 <p className="py-2"> تخصص من در کار با REST APIها، استفاده از React Hooks، و درک دقیق
                                     از <strong>رندر سمت کلاینت(CSR)</strong> و <strong>رندر سمت سرور (SSR)</strong> است.
@@ -68,7 +68,7 @@ export const About: FC = () => {
                                 <p className="py-2">
                                     علاوه بر حوزه فرانت اند، در کارگاه‌ها و دوره‌های پیشرفته‌ای مانند "کارگاه هوش مصنوعی
                                     برای توسعه‌دهندگان" شرکت کرده‌ام که تمرکز آن بر استفاده عملی از ابزارهای AI در
-                                    فرآیند توسعه بود. همچنین 250 ساعت آموزش پیشرفته CSS و Sass و React مربوط به دوره های Udemy را
+                                    فرآیند توسعه بود. همچنین 250 ساعت آموزش پیشرفته CSS و Sass وJavaScript و React مربوط به دوره های Udemy را
                                     گذرانده‌ام که باعث تقویت توانایی من در طراحی چیدمان‌های مدرن و سیستم‌های طراحی شده
                                     است. در زمینه زبان انگلیسی نیز دارای سطح پیشرفته هستم و چهار سال آموزش مکالمه و
                                     ارتباطات فنی را در کانون زبان ایران گذرانده‌ام.
@@ -87,7 +87,7 @@ export const About: FC = () => {
                                     self-study through
                                     several front-end development courses on Udemy, followed by an intensive 8-month
                                     bootcamp at Navax
-                                    College, where I Built 8 comprehensive projects including an e-commerce platform and quiz application featuring 300+ self-authored React questions, reflecting profound understanding of complex framework principles and best practices
+                                    College, where I Built 15 comprehensive projects including an e-commerce platform and quiz application featuring 300+ self-authored React questions, reflecting profound understanding of complex framework principles and best practices
                                 </p>
 
                                 <p className="py-2">
@@ -104,7 +104,7 @@ export const About: FC = () => {
                                     the <em>AI
                                     Workshop for Developers</em>, focusing on practical use of AI tools in development,
                                     and
-                                    the <em>Advanced CSS & Sass & React</em> course, enhancing my layout and design system
+                                    the <em>Advanced CSS & Sass & JavaScript & React</em> course, enhancing my layout and design system
                                     capabilities.
                                     I'm also fluent in English, having completed four years of advanced conversation and
                                     technical
