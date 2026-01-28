@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <Navbar />
             <Head>
-                <title>Omid Sadeghi | Front-End Developer</title>
+                <title> Web Dev Portfolio</title>
                 <meta
                     name="description"
                     content="Portfolio of Omid Sadeghi – Front-End Developer specializing in React, TypeScript, and Next.js."
