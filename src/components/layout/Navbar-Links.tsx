@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavbarLinks = () => {
     return (
         <nav   className="bg-emerald-100 text-gray-900" >
-            <div className="mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row sm:flex-wrap gap-x-16 sm:items-center sm:py8"
+            <div className=" align-element py-4 flex flex-col sm:flex-row sm:flex-wrap gap-x-16 sm:items-center sm:py8"
             >
                 <h2 className='text-3xl font-bold'>Web<span className='text-emerald-600 '>Dev</span></h2>
                 <div className='flex gap-x-3'>

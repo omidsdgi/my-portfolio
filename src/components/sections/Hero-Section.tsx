@@ -4,7 +4,7 @@ import Image from "next/image";
 const HeroSection = () => {
     return (
         <div className="bg-emerald-100 py-24 text-emerald-900">
-            <div className='max-w-7xl mx-auto px-8 grid md:grid-cols-2 items-center gap-7'>
+            <div className='align-element grid md:grid-cols-2 items-center gap-7'>
             <article >
                 <h1 className='text-7xl font-bold tracking-wider'>I'm Omid</h1>
                 <p className='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
