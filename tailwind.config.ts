@@ -18,6 +18,15 @@ const config = {
                 quicksand: ['var(--font-quicksand)', 'sans-serif'],
                 tahoma: ['Tahoma', 'sans-serif'],
             },
+            keyframes: {
+                pulseScale: {
+                    '0%, 100%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(1.1)' },
+                },
+            },
+            animation: {
+                'pulse-scale': 'pulseScale 2s ease-in-out infinite',
+            },
         },
     },
     plugins: [],
