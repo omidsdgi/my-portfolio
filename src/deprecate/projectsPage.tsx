@@ -1,13 +1,13 @@
 
-import {projects} from "@/lib/projects";
 import Link from "next/link";
+import {projects} from "@/Data";
 
 
 export default function ProjectsPage() {
     return (
         <main className="max-w-7xl bg-[#555555] mt-5 rounded-3xl mx-auto px-4 py-12">
             <h1 className="text-5xl text-white font-quicksand font-bold mb-8 dark:text-yellow-300" >
-                <Link href="/" className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all  mr-4">&larr;</Link>
+                <Link href="/public" className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all  mr-4">&larr;</Link>
                 Projects</h1>
 
             <div className="grid md:grid-cols-2 gap-12 ">

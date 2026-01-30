@@ -22,7 +22,7 @@ export default function Navbar() {
             <li className="md:ml-4">
                 <ThemeToggle/>
             </li>
-                    <Link href="/" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
+                    <Link href="/public" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
                         OMID.developer
                     </Link>
 
