@@ -17,6 +17,10 @@ const config = {
                 lato: ['var(--font-lato)'],
                 quicksand: ['var(--font-quicksand)', 'sans-serif'],
                 tahoma: ['Tahoma', 'sans-serif'],
+                vazir: ['var(--font-vazir)'],
+                sans: ['var(--font-inter)'],
+                display: ['var(--font-poppins)'],
+                mono: ['var(--font-fira-code)'],
             },
             keyframes: {
                 pulseScale: {
