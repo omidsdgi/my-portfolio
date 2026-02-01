@@ -15,12 +15,8 @@ const config = {
             },
             fontFamily: {
                 lato: ['var(--font-lato)'],
-                quicksand: ['var(--font-quicksand)', 'sans-serif'],
-                tahoma: ['Tahoma', 'sans-serif'],
-                vazir: ['var(--font-vazir)'],
-                sans: ['var(--font-inter)'],
-                display: ['var(--font-poppins)'],
-                mono: ['var(--font-fira-code)'],
+                quicksand: ['var(--font-quicksand)'],
+                vazir: ['Vazirmatn', 'sans-serif'],
             },
             keyframes: {
                 pulseScale: {
