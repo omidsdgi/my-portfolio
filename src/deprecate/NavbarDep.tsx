@@ -10,7 +10,7 @@ const navItems = [
     { href: "#footer", label: "تماس" },
 ];
 
-export default function Navbar() {
+export default function NavbarDep() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

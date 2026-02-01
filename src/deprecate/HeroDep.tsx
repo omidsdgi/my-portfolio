@@ -2,7 +2,7 @@ import {FC} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Hero: FC = () => (
+export const HeroDep: FC = () => (
     <section
         className="mx-auto bg-[#fdf2e9] dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen max-w-6xl mt-10 flex flex-col justify-evenly items-center p-6 text-center"
     >
