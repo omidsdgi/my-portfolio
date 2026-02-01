@@ -53,8 +53,6 @@
   /* Global base styles */
   * {
     box-sizing: border-box;
-    border-width: 1px;
-    border-color: rgb(var(--border));
   }
 
   body {
