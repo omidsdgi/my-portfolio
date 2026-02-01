@@ -1,10 +1,10 @@
-import { AppProps } from "next/app";
-import { Inter, Poppins } from "next/font/google";
-import localFont from "next/font/local";
-import { AppProvider } from "@/context/GlobalContext";
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import {Inter, Lato, Poppins, Quicksand} from "next/font/google";
+import {AppProvider} from "@/contexts/GlobalContext";
 import { ThemeProvider } from "next-themes";
 
-// Google Fonts
+
 const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
@@ -18,32 +18,27 @@ const poppins = Poppins({
     display: "swap",
     weight: ["400", "500", "600", "700", "800"],
 });
+const quicksand=Quicksand({
+    subsets:['latin'],
+    variable:'--font-quicksand'
+})
 
-// Persian Font - Vazirmatn
-const vazir = localFont({
-    src: [
-        { path: "/fonts/Vazirmatn-Regular.woff2", weight: "400", style: "normal" },
-        { path: "/fonts/Vazirmatn-Medium.woff2", weight: "500", style: "normal" },
-        { path: "/fonts/Vazirmatn-Bold.woff2", weight: "700", style: "normal" },
-        { path: "/fonts/Vazirmatn-Black.woff2", weight: "900", style: "normal" },
-    ],
-    variable: "--font-vazir",
-    display: "swap",
-});
+const lato=Lato({
+    weight:['300','400','100'],
+    subsets:["latin"],
+    variable:'--font-lato'
+})
+
+
 
 export default function App({ Component, pageProps }: AppProps) {
-    return (
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem={true}
-            disableTransitionOnChange={false}
-        >
-            <div className={`${inter.variable} ${poppins.variable} ${vazir.variable} font-sans`}>
-                <AppProvider>
-                    <Component {...pageProps} />
-                </AppProvider>
-            </div>
+    return(
+        <ThemeProvider attribute={"class"} defaultTheme="light" enableSystem={false}>
+        <div className={`${quicksand.variable} ${lato.variable} ${inter.variable} ${poppins.variable} `}>
+            <AppProvider>
+            <Component {...pageProps} />;
+            </AppProvider>
+        </div>
         </ThemeProvider>
-    );
+    )
 }
