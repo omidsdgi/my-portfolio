@@ -1,334 +1,280 @@
-#### Setup Vite and Tailwind
+# 🚀 Portfolio Website - Refactored Version
 
-[Tailwind Docs](https://tailwindcss.com/docs/guides/vite)
+## ✨ تغییرات و بهبودهای اعمال شده
 
-- setup vite project
+### 🎨 1. Theme Management (Dark & Light Mode)
+- ✅ **تنظیم تم Slate & Emerald** در تمام حالت‌های Dark و Light
+- ✅ **پشتیبانی از System Theme Detection** - تشخیص خودکار تم سیستم کاربر
+- ✅ **ThemeToggle Component** بهبود یافته با انیمیشن نرم
+- ✅ **رنگ‌بندی یکپارچه** در تمام کامپوننت‌ها
 
-```sh
-npm create vite@latest my-project -- --template react
-cd my-project
-```
+**رنگ‌های استفاده شده:**
+- Primary: Emerald (500-600)
+- Background Light: Slate (50-100)
+- Background Dark: Slate (800-900)
+- Text Light: Slate (700-900)
+- Text Dark: Slate (50-300)
 
-- add tailwind
+---
 
-```sh
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
+### 🔤 2. Typography & Fonts
+**فونت‌های بهینه شده:**
+- **Inter** - فونت اصلی (Clean & Modern)
+- **Poppins** - برای تیترها (Display & Emphasis)
+- **Vazir** - برای محتوای فارسی (Persian Content)
 
-- rename to tailwind.config.cjs
-- add following content
+**مزایا:**
+- بهینه‌سازی با `next/font` برای عملکرد بهتر
+- پشتیبانی کامل از RTL برای فارسی
+- خوانایی عالی در تمام اندازه‌های صفحه
 
-```js
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
-```
+---
 
-- remove App.css
-- delete contents of index.css
-- delete contents of App.jsx
-- change title
+### 📌 3. Fixed Navbar
+- ✅ **Navbar ثابت در بالای صفحه** با `position: fixed`
+- ✅ **Blur Effect** هنگام اسکرول
+- ✅ **Smooth Scroll** برای navigation links
+- ✅ **Offset اتوماتیک** برای جلوگیری از پنهان شدن محتوا زیر navbar
 
-```js
-const App = () => {
-  return <div>App</div>;
-};
-export default App;
-```
-
-- Add the Tailwind directives to your CSS
-
-index.css
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-Tailwind directives are instructions that decide how Tailwind CSS creates the styles for your website. They control the global styles, component styles, and utility classes.
-
-- start the project "npm run dev"
-- setup first tailwind classes in App.jsx
-
-App.jsx
-
-```js
-const App = () => {
-  return <h1 className='text-7xl font-bold underline'>Tailwind project</h1>;
-};
-export default App;
-```
-
-#### Assets
-
-- get assets from "project-assets"
-- images from Undraw
-  [Undraw Docs](https://undraw.co/)
-
-#### Install More Libraries
-
-```sh
-npm i nanoid react-icons
-```
-
-#### Useful Tailwind Extensions
-
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-- [Tailwind Fold](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold)
-
-#### Navbar Component
-
-- explore 'links' array in data.jsx
-- setup components/navbar
-- import links
-- setup return and render in App.jsx
-
-```js
-import { links } from '../data';
-const Navbar = () => {
-  return (
-    <nav className='bg-emerald-100 '>
-      <div className='mx-auto max-w-7xl  px-8 py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
-        <h2 className='text-3xl font-bold'>
-          Web
-          <span className='text-emerald-600'>Dev</span>
-        </h2>
-        <div className='flex gap-x-3 '>
-          {links.map((link) => {
-            const { id, href, text } = link;
-            return (
-              <a
-                key={id}
-                href={href}
-                className='capitalize text-lg tracking-wide hover:text-emerald-600 duration-300'
-              >
-                {text}
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </nav>
-  );
-};
-export default Navbar;
-```
-
-#### Hero Component
-
-- setup components/Hero
-- setup return
-- render in App.jsx
-
-```js
-import heroImg from '../assets/hero.svg';
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-const Hero = () => {
-  return (
-    <section className='bg-emerald-100 py-24  '>
-      <div className=' mx-auto max-w-7xl  px-8  grid  md:grid-cols-2 items-center gap-8'>
-        <article>
-          <h1 className='text-7xl font-bold tracking-wider'>I'm John</h1>
-          <p className='mt-4 text-3xl text-slate-700 capitalize tracking-wide'>
-            Front-end developer
-          </p>
-          <p className='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
-            turning ideas into interactive reality
-          </p>
-          <div className='flex gap-x-4 mt-4'>
-            <a href='#'>
-              <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
-            </a>
-            <a href='#'>
-              <FaLinkedin className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
-            </a>
-            <a href='#'>
-              <FaTwitterSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
-            </a>
-          </div>
-        </article>
-
-        <article className='hidden md:block '>
-          <img src={heroImg} className='h-80 lg:h-96' />
-        </article>
-      </div>
-    </section>
-  );
-};
-export default Hero;
-```
-
-#### Repeating Styles
-
-index.css
-
-```css
-@layer components {
-  .align-element {
-    @apply mx-auto max-w-7xl px-8;
+**کد اصلی:**
+```typescript
+const handleSmoothScroll = (e: React.MouseEvent, href: string) => {
+  e.preventDefault();
+  const element = document.getElementById(href.replace('#', ''));
+  if (element) {
+    const navHeight = 80;
+    const offsetPosition = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   }
+};
+```
+
+---
+
+### 🔄 4. RTL Support (راست‌چین کردن فارسی)
+- ✅ **متن‌های فارسی کاملاً راست‌چین و کشیده**
+- ✅ **تیترها در سمت راست** هنگام زبان فارسی
+- ✅ **Line-height بهینه** برای متن فارسی (2)
+- ✅ **Letter-spacing مناسب** برای خوانایی بهتر
+
+**کلاس RTL:**
+```css
+.rtl-text {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--font-vazir);
+  line-height: 2;
+  letter-spacing: 0.02em;
 }
 ```
 
-- replace in Hero and Navbar
+---
 
-#### Skills
+### 🖼️ 5. About Section Image Height Fix
+- ✅ **تصویر Sticky** در دسکتاپ - همیشه قابل مشاهده
+- ✅ **max-height محدود** برای جلوگیری از بزرگی بیش از حد
+- ✅ **Aspect Ratio حفظ شده** در تمام سایزها
+- ✅ **Hover Effect** با scale animation
 
-- explore skills array in data.jsx
-- create Skills,SkillsCard and SectionTitle components
-- setup return and render in App.jsx
-
-Skills.jsx
-
-```js
-import SkillsCard from './SkillsCard';
-import { skills } from '../data';
-import SectionTitle from './SectionTitle';
-const Skills = () => {
-  return (
-    <section className='py-20 align-element' id='skills'>
-      <SectionTitle text='tech stack ' />
-
-      <div class=' py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        {skills.map((skill) => {
-          return <SkillsCard key={skill.id} {...skill} />;
-        })}
-      </div>
-    </section>
-  );
-};
-export default Skills;
+**کد اصلی:**
+```typescript
+<div className="w-full h-full md:sticky md:top-24">
+  <div className="max-h-[600px] md:max-h-[700px] overflow-hidden">
+    <Image ... className="hover:scale-105 transition-transform duration-500" />
+  </div>
+</div>
 ```
 
-SectionTitle.jsx
+---
 
-```js
-const SectionTitle = ({ text }) => {
-  return (
-    <div className='border-b border-gray-200 pb-5'>
-      <h2 className='text-3xl font-medium tracking-wider capitalize'>{text}</h2>
-    </div>
-  );
-};
-export default SectionTitle;
+### 🔧 6. مشکلات Critical رفع شده
+
+#### ❌ مشکل: Dark Mode Button در Navbar
+**قبل:**
+```typescript
+<button onClick={document.documentElement.classList.toggle('dark')}>
+```
+**بعد:**
+```typescript
+<ThemeToggle /> // استفاده از next-themes
 ```
 
-SkillsCard.jsx
-
-```js
-const SkillsCard = ({ icon, title, text }) => {
-  return (
-    <article>
-      <span className='h-16 w-16'>{icon}</span>
-      <h4 className='mt-6 font-bold'>{title}</h4>
-      <p className='mt-2 text-slate-500'>{text}</p>
-    </article>
-  );
-};
-export default SkillsCard;
-```
-
-#### Global Styles
-
-index.html
-
+#### ❌ مشکل: Hardcoded Dark Class
+**قبل:**
 ```html
-<html lang="en" class="bg-slate-50 scroll-smooth"></html>
+<Html lang="en" className="dark">
+```
+**بعد:**
+```html
+<Html lang="en" className="scroll-smooth">
 ```
 
-#### About
-
-- create About component and render in App.jsx
-
-```js
-import aboutSvg from '../assets/about.svg';
-import SectionTitle from './SectionTitle';
-const About = () => {
-  return (
-    <section class='bg-white py-20' id='about'>
-      <div class='align-element grid  md:grid-cols-2 items-center gap-16'>
-        <img src={aboutSvg} className='w-full h-64' />
-        <article>
-          <SectionTitle text='code and coffee' />
-          <p className='text-slate-600 mt-8 leading-loose'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
-            omnis exercitationem tempora, aliquid deleniti tenetur vero esse
-            praesentium eaque dicta fugiat? Molestiae expedita, nulla neque
-            error porro sint distinctio possimus!
-          </p>
-        </article>
-      </div>
-    </section>
-  );
-};
-export default About;
+#### ❌ مشکل: متن فارسی Encoded
+**قبل:**
+```
+Ø¨Ù‡ Ø¹Ù†ÙˆØ§Ù†...
+```
+**بعد:**
+```
+به عنوان یک توسعه‌دهنده...
 ```
 
-#### Projects
+---
 
-- explore "projects" array in data.jsx
-- create Projects and ProjectsCard components
-- setup return and render in App.jsx
+### 🎯 7. تغییرات Medium Priority
 
-Projects.jsx
+1. **Accessibility بهبود یافته:**
+   - ARIA labels برای تمام دکمه‌ها و لینک‌ها
+   - Semantic HTML tags
+   - Focus states واضح با ring effect
 
-```js
-import ProjectsCard from './ProjectsCard';
-import { projects } from '../data';
-import SectionTitle from './SectionTitle';
-const Projects = () => {
-  return (
-    <section className='py-20 align-element' id='projects'>
-      <SectionTitle text='web creations' />
-      <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
-        {projects.map((project) => {
-          return <ProjectsCard key={project.id} {...project} />;
-        })}
-      </div>
-    </section>
-  );
-};
-export default Projects;
+2. **Performance Optimization:**
+   - Image lazy loading
+   - Font optimization با `next/font`
+   - CSS variables برای theme switching سریع
+
+3. **Code Quality:**
+   - TypeScript interfaces کامل
+   - Consistent naming conventions
+   - Proper component structure
+
+4. **SEO Improvements:**
+   - Meta tags کامل
+   - Open Graph tags
+   - Twitter Card metadata
+
+---
+
+### 📁 8. ساختار فولدر جدید
+
+```
+project-root/
+├── components/
+│   ├── Navbar.tsx
+│   ├── HeroSection.tsx
+│   ├── AboutSection.tsx
+│   ├── SkillList.tsx
+│   ├── SkillCard.tsx
+│   ├── Projects.tsx
+│   ├── ProjectCard.tsx
+│   ├── SectionTitle.tsx
+│   ├── ThemeToggle.tsx
+│   └── Footer.tsx
+├── contexts/
+│   └── GlobalContext.tsx
+├── data/
+│   └── Data.tsx
+├── pages/
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   └── index.tsx
+├── styles/
+│   └── globals.css
+└── public/
+    ├── fonts/
+    │   ├── Vazir-Regular.woff2
+    │   ├── Vazir-Medium.woff2
+    │   └── Vazir-Bold.woff2
+    └── image/
+        ├── Omid.png
+        └── shopping.png
 ```
 
-ProjectsCard.jsx
+---
 
-```js
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
-import { TbWorldWww } from 'react-icons/tb';
-const ProjectsCard = ({ url, img, github, title, text }) => {
-  return (
-    <article className='bg-white rounded-lg shadow-md block hover:shadow-xl duration-300'>
-      <img
-        src={img}
-        alt={title}
-        className='w-full object-cover rounded-t-lg h-64 '
-      />
-      <div className='capitalize p-8'>
-        <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
-        <p className='mt-4 text-slate-700 leading-loose'>{text}</p>
-        <div className='mt-4 flex gap-x-4'>
-          <a href={url}>
-            <TbWorldWww className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
-          </a>
-          <a href={github}>
-            <FaGithubSquare className='h-8 w-8 text-slate-500 hover:text-black duration-300' />
-          </a>
-        </div>
-      </div>
-    </article>
-  );
-};
-export default ProjectsCard;
+## 🚀 نصب و راه‌اندازی
+
+### پیش‌نیازها:
+```bash
+npm install next-themes
+npm install lucide-react
+npm install react-icons
+npm install nanoid
+npm install tailwindcss
 ```
 
-#### Extra Challenge
+### فونت Vazir:
+1. دانلود فونت Vazir از [GitHub](https://github.com/rastikerdar/vazir-font)
+2. کپی فایل‌های `.woff2` به `public/fonts/`
+3. تنظیم در `_app.tsx` انجام شده است
 
-- setup projects in CMS
+---
+
+## 🎨 کلاس‌های CSS سفارشی
+
+### Utility Classes:
+- `.align-element` - Container با max-width
+- `.rtl-text` - متن فارسی راست‌چین
+- `.card` - کارت با shadow و hover effect
+- `.btn-primary` - دکمه اصلی با emerald theme
+- `.section-title` - تیتر بخش‌ها
+- `.gradient-text` - متن با gradient emerald
+- `.nav-link` - لینک‌های navbar
+
+---
+
+## 🔍 نکات مهم
+
+### 1. Theme Switching:
+```typescript
+import { useTheme } from 'next-themes';
+
+const { theme, setTheme, systemTheme } = useTheme();
+```
+
+### 2. Language Switching:
+```typescript
+import { useLangContext } from '@/contexts/GlobalContext';
+
+const { lang, toggleLang } = useLangContext();
+```
+
+### 3. Smooth Scroll:
+همه لینک‌های navbar به صورت خودکار smooth scroll دارند.
+
+---
+
+## 📊 چک‌لیست تکمیل شده
+
+### ✅ اقدامات Critical:
+- [x] تنظیم تم Slate & Emerald
+- [x] Dark Mode با System Detection
+- [x] بهترین فونت‌ها (Inter, Poppins, Vazir)
+- [x] Navbar ثابت در بالای صفحه
+- [x] Smooth Scroll برای NavLinks
+- [x] نوشته‌های فارسی راست‌چین و کشیده
+- [x] مدیریت ارتفاع تصویر About
+- [x] رفع مشکلات encoding
+- [x] حذف hardcoded dark class
+- [x] استفاده از ThemeToggle component
+
+### ✅ اقدامات Medium:
+- [x] Accessibility improvements
+- [x] SEO optimization
+- [x] TypeScript interfaces
+- [x] Consistent naming
+- [x] Performance optimization
+
+---
+
+## 🎯 نتیجه
+
+پروژه به صورت کامل بازنویسی شد با:
+- ✨ UI/UX مدرن و حرفه‌ای
+- 🎨 Theme Management قوی
+- 🌐 پشتیبانی کامل از RTL
+- ⚡ Performance بهینه
+- ♿ Accessibility عالی
+- 🔍 SEO Friendly
+- 📱 Fully Responsive
+
+---
+
+## 📞 تماس
+
+برای هرگونه سوال یا مشکل، لطفاً با من تماس بگیرید.
+
+**Omid Sadeghi**
+- GitHub: [@omidsdgi](https://github.com/omidsdgi)
+- Telegram: [@omidsdgi](https://t.me/omidsdgi)
+- Email: omid69sdgi@gmail.com
