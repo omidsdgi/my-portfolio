@@ -1,30 +1,49 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import {Lato, Quicksand} from "next/font/google";
-import {ThemeProvider} from "next-themes";
-import {AppProvider} from "@/GlobalContext";
+import { AppProps } from "next/app";
+import { Inter, Poppins } from "next/font/google";
+import localFont from "next/font/local";
+import { AppProvider } from "@/context/GlobalContext";
+import { ThemeProvider } from "next-themes";
 
-const quicksand=Quicksand({
-    subsets:['latin'],
-    variable:'--font-quicksand'
-})
+// Google Fonts
+const inter = Inter({
+    subsets: ["latin"],
+    variable: "--font-inter",
+    display: "swap",
+    weight: ["300", "400", "500", "600", "700"],
+});
 
-const lato=Lato({
-    weight:['300','400','100'],
-    subsets:["latin"],
-    variable:'--font-lato'
-})
+const poppins = Poppins({
+    subsets: ["latin"],
+    variable: "--font-poppins",
+    display: "swap",
+    weight: ["400", "500", "600", "700", "800"],
+});
 
-
+// Persian Font - Vazirmatn
+const vazir = localFont({
+    src: [
+        { path: "/fonts/Vazirmatn-Regular.woff2", weight: "400", style: "normal" },
+        { path: "/fonts/Vazirmatn-Medium.woff2", weight: "500", style: "normal" },
+        { path: "/fonts/Vazirmatn-Bold.woff2", weight: "700", style: "normal" },
+        { path: "/fonts/Vazirmatn-Black.woff2", weight: "900", style: "normal" },
+    ],
+    variable: "--font-vazir",
+    display: "swap",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-    return(
-        <ThemeProvider attribute={"class"} defaultTheme="light" enableSystem={false}>
-        <div className={`${quicksand.variable} ${lato.variable} `}>
-            <AppProvider>
-            <Component {...pageProps} />;
-            </AppProvider>
-        </div>
+    return (
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem={true}
+            disableTransitionOnChange={false}
+        >
+            <div className={`${inter.variable} ${poppins.variable} ${vazir.variable} font-sans`}>
+                <AppProvider>
+                    <Component {...pageProps} />
+                </AppProvider>
+            </div>
         </ThemeProvider>
-    )
+    );
 }
