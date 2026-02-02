@@ -3,7 +3,7 @@ import Image from "next/image";
 import {FC, useState} from "react";
 import {ChevronLeft, ChevronRight} from "lucide-react";
 
-export const About: FC = () => {
+export const AboutDep: FC = () => {
     const [lang, setLang] = useState<'fa' | 'en'>('en');
     return (
         <>
@@ -124,4 +124,4 @@ export const About: FC = () => {
     );
 };
 
-export default About;
+export default AboutDep;
