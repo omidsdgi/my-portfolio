@@ -1,16 +1,36 @@
-import {useLangContext} from "@/GlobalContext";
+import {useAppContext} from "@/contexts/GlobalContext";
+
 type SectionTitleProps = {
     text: string;
-    showLangButton?: boolean; // ✅ prop جدید، اختیاری
+    showLangButton?: boolean;
+    id?: string;
 };
 
-const SectionTitle = ({text,showLangButton=false}:SectionTitleProps) => {
-    const {lang, toggleLang}=useLangContext()
+const SectionTitle = ({ text, showLangButton = false, id }: SectionTitleProps) => {
+    const { lang, toggleLang } = useAppContext();
+
     return (
-        <div className='border-b border-gray-200 py-5 flex items-center justify-between'>
-            <h2 className='text-3xl font-medium tracking-wider capitalize'>{text}</h2>
-            {lang && showLangButton && (
-            <button className='bg-emerald-500 px-4 py-2 rounded animate-pulse-scale' onClick={toggleLang}>{lang === 'fa'? 'Coder & Creative': ' کدنویس و خلاق'}</button>
+        <div
+            id={id}
+            className={`flex items-center justify-between py-8 border-b-2 border-emerald-600/40
+                 `}
+        >
+            <h2 className={`section-title ${lang === 'fa' ? 'font-vazir' : 'font-display'}`}>
+                {text}
+            </h2>
+
+            {showLangButton && (
+                <button
+                    onClick={toggleLang}
+                    className="px-5 py-2.5 rounded-lg font-medium text-lg  transition-all duration-200
+                   bg-emerald-500 hover:bg-emerald-600 text-white
+                   shadow-md hover:shadow-lg hover:scale-105 active:scale-95
+                   focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 animate-pulse-scale
+                   dark:focus:ring-offset-slate-900"
+                    aria-label={lang === 'fa' ? 'Switch to Persian' : 'Switch to English'}
+                >
+                    {lang === 'fa' ? 'Coder & Creative' : 'کـد نـویس و خـلاق'}
+                </button>
             )}
         </div>
     );
