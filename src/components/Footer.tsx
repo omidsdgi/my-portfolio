@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer
             id="contact"
-            className="bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700"
+            className="bg-slate-200 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700"
         >
             <div className="align-element py-12">
                 {/* Main Content */}

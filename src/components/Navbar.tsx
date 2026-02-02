@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { links } from "@/Data";
+import { links } from "@/data/Data";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import {useAppContext} from "@/GlobalContext";
+import {useAppContext} from "@/contexts/GlobalContext";
 
 // تابع اسکرول نرم برای لینک‌های داخلی
 const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -34,11 +34,11 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${
-                isScrolled
-                    ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg"
-                    : "bg-emerald-50/80 dark:bg-slate-800/80 backdrop-blur-sm"
-            }`}
+       ${isScrolled
+                ? 'bg-slate-300/95 dark:bg-slate-800/95 backdrop-blur-md shadow-md'
+                : 'bg-slate-200/90 dark:bg-slate-800/90 backdrop-blur-sm'
+            }
+`}
         >
             <div className="align-element">
                 <div className="flex items-center justify-between h-20">
