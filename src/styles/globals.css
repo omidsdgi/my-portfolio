@@ -99,13 +99,13 @@
 
   /* RTL Persian Text */
   .rtl-text {
-    @apply text-right;
-    direction: rtl;
-    font-family: var(--font-vazir), sans-serif;
-    line-height: 2;
-    letter-spacing: 0.02em;
-  }
-
+  @apply text-right text-xl leading-relaxed text-slate-800 dark:text-slate-200;
+  direction: rtl;
+  font-family: var(--font-vazir), sans-serif;
+  line-height: 1.9;
+  letter-spacing: 0.015em;
+  word-spacing: 0.05em;
+}
   /* Card */
   .card {
     @apply bg-white dark:bg-slate-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
