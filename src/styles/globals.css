@@ -179,9 +179,18 @@
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+}
 
 .animate-fadeIn { animation: fadeIn 0.6s ease-out; }
 .animate-slideDown { animation: slideDown 0.3s ease-out; }
+.animate-pulse-scale {animation: pulse-scale 2.5s ease-in-out infinite}
 
 /* ==================== RESPONSIVE IMAGES ==================== */
 img { @apply max-w-full h-auto; }
