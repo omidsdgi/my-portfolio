@@ -45,7 +45,7 @@ export const skills = [
         icon: <SiNextdotjs className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Expert in Next.js, leveraging SSR, SSG, ISR, and API Routes to build high-performance full-stack applications.',
-            fa: 'تسلط کامل بر Next.js با استفاده از SSR، SSG، ISR و API Routes برای ساخت برنامه‌های فول‌استک با کارایی بالا.',
+            fa: 'توسعه‌دهنده متخصص در Next.js با تسلط بر SSR، SSG، ISR و API Routes برای ساخت اپلیکیشن‌های فول‌استک با کارایی و سرعت بالا.',
         },
     },
     {
@@ -54,7 +54,7 @@ export const skills = [
         icon: <SiVite className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Proficient in Vite for rapid React development with lightning-fast builds and optimized HMR.',
-            fa: 'تسلط بر Vite برای توسعه سریع React با بیلدهای فوق‌العاده سریع و بهینه‌سازی HMR.',
+            fa: 'تسلط بالا بر Vite برای توسعه سریع پروژه‌های React با بیلدهای بسیار سریع و HMR بهینه‌شده برای افزایش سرعت و بهره‌وری.',
         },
     },
     {
@@ -63,7 +63,7 @@ export const skills = [
         icon: <SiNextdotjs className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Deep understanding of rendering strategies (CSR, SSR, SSG, ISR) and architectural design in modern React apps.',
-            fa: 'درک عمیق از استراتژی‌های رندر (CSR، SSR، SSG، ISR) و طراحی معماری در برنامه‌های مدرن React.',
+            fa: 'درک عمیق از انواع استراتژی‌های رندر شامل CSR، SSR، SSG و ISR و طراحی معماری در برنامه‌های React مدرن برای بهینه‌سازی عملکرد.',
         },
     },
     {
@@ -72,7 +72,7 @@ export const skills = [
         icon: <SiSupabase className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Proficient with Supabase and Strapi for backend integration, authentication, and data management.',
-            fa: 'تسلط بر Supabase و Strapi برای اتصال بک‌اند، احراز هویت و مدیریت داده‌ها.',
+            fa: 'تسلط کامل بر Supabase و Strapi برای یکپارچه‌سازی بک‌اند، مدیریت داده‌ها و پیاده‌سازی سیستم‌های احراز هویت کارآمد.',
         },
     },
     {
@@ -81,7 +81,7 @@ export const skills = [
         icon: <SiVercel className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Experienced in deploying and optimizing applications on Vercel with CI/CD workflows.',
-            fa: 'تجربه در استقرار و بهینه‌سازی برنامه‌ها در Vercel همراه با گردش‌کار CI/CD.',
+            fa: 'دارای تجربه در استقرار و بهینه‌سازی اپلیکیشن‌ها در Vercel همراه با پیاده‌سازی گردش‌کار CI/CD برای استقرار خودکار و مستمر.',
         },
     },
 
