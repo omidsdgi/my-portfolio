@@ -92,7 +92,7 @@ export const skills = [
         icon: <FaReact className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Advanced React developer, building modular, performant UIs with Hooks, Context API, and React Router.',
-            fa: 'توسعه‌دهنده حرفه‌ای React در ساخت رابط‌های کاربری ماژولار و بهینه با Hooks، Context API و React Router.',
+            fa: 'تسلط کامل بررReact با تمرکز بر ساخت رابط‌های کاربری ماژولار، سریع و قابل نگهداری با استفاده از Hooks، Context API و React Router.',
         },
     },
     {
@@ -101,7 +101,7 @@ export const skills = [
         icon: <SiRedux className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Skilled in Redux Toolkit for predictable, scalable state management in complex React apps.',
-            fa: 'مهارت در Redux Toolkit برای مدیریت وضعیت قابل پیش‌بینی و مقیاس‌پذیر در برنامه‌های React.',
+            fa: ' دارای مهارت بالا در Redux Toolkit برای مدیریت وضعیت قابل پیش‌بینی، پایدار و مقیاس‌پذیر در برنامه‌های پیچیده React.',
         },
     },
     {
@@ -110,7 +110,7 @@ export const skills = [
         icon: <SiAxios className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Efficiently managing server state and API communication using TanStack Query and Axios.',
-            fa: 'مدیریت کارآمد وضعیت سرور و ارتباط با API با استفاده از TanStack Query و Axios.',
+            fa: 'مدیریت کارآمد وضعیت سرور و ارتباط با API با استفاده از TanStack Query و Axios برای بهینه‌سازی عملکرد و کاهش درخواست‌های غیرضروری',
         },
     },
     {
@@ -119,7 +119,7 @@ export const skills = [
         icon: <SiReactrouter className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Experienced in React Router for implementing client-side routing, nested routes, and protected paths in SPA projects.',
-            fa: 'تجربه در React Router برای پیاده‌سازی مسیر‌یابی سمت کاربر، مسیرهای تو در تو و مسیرهای محافظت‌شده در پروژه‌های SPA.',
+            fa: 'دارای تجربه در React Router برای پیاده‌سازی مسیر‌یابی سمت کاربر، مسیرهای تو در تو و مسیرهای محافظت‌شده در پروژه‌های تک‌صفحه‌ای (SPA).',
         },
     },
     {
@@ -128,7 +128,7 @@ export const skills = [
         icon: <FaReact className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Proficient in building optimized forms and shared state management with React Hook Form and Context API.',
-            fa: 'تسلط بر ساخت فرم‌های بهینه و مدیریت وضعیت اشتراکی با React Hook Form و Context API.',
+            fa: 'تسلط بر طراحی و ساخت فرم‌های بهینه همراه با مدیریت وضعیت اشتراکی با استفاده از React Hook Form و Context API.',
         },
     },
 
@@ -139,7 +139,7 @@ export const skills = [
         icon: <SiTailwindcss className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Creating modern, responsive, and clean UIs rapidly using TailwindCSS utility classes.',
-            fa: 'ایجاد رابط‌های کاربری مدرن، واکنش‌گرا و تمیز با استفاده از کلاس‌های ابزاری TailwindCSS.',
+            fa: 'ساخت سریع رابط‌های کاربری مدرن، واکنش‌گرا و تمیز با بهره‌گیری از کلاس‌های ابزاری TailwindCSS.',
         },
     },
     {
@@ -148,7 +148,7 @@ export const skills = [
         icon: <SiSass className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Applying component-scoped styling through styled-components and CSS Modules for maintainability.',
-            fa: 'به‌کارگیری استایل‌های مقیاس‌پذیر با styled-components و CSS Modules برای نگهداری آسان‌تر کد.',
+            fa: 'به‌کارگیری استایل‌های سطح کامپوننت با styled-components و CSS Modules برای افزایش نگهداری‌پذیری و مقیاس‌پذیری کد.',
         },
     },
     {
@@ -157,7 +157,7 @@ export const skills = [
         icon: <SiBootstrap className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Experienced in Bootstrap and SCSS for structured, responsive UI development.',
-            fa: 'تجربه در Bootstrap و SCSS برای توسعه رابط کاربری ساختاریافته و واکنش‌گرا.',
+            fa: 'تجربه در استفاده از Bootstrap و SCSS برای توسعه رابط‌های کاربری ساختاریافته، واکنش‌گرا و سازگار با طراحی مدرن.',
         },
     },
     {
@@ -166,7 +166,7 @@ export const skills = [
         icon: <FaFigma className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Applying responsive design principles and using Figma for design systems and prototypes.',
-            fa: 'به‌کارگیری اصول طراحی واکنش‌گرا و استفاده از Figma برای سیستم‌های طراحی و پروتوتایپ.',
+            fa: '\'به‌کارگیری اصول طراحی واکنش‌گرا و استفاده از ابزار Figma برای ایجاد سیستم‌های طراحی منسجم و پروتوتایپ‌های تعاملی.',
         },
     },
 
@@ -177,7 +177,7 @@ export const skills = [
         icon: <SiTypescript className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Writing clean, type-safe code in large-scale applications using TypeScript.',
-            fa: 'نوشتن کد تمیز و ایمن از نظر نوع در پروژه‌های بزرگ با TypeScript.',
+            fa: 'نوشتن کد تمیز، مقیاس‌پذیر و ایمن از نظر نوع در پروژه‌های بزرگ با استفاده از TypeScript.',
         },
     },
     {
@@ -186,7 +186,7 @@ export const skills = [
         icon: <FaJs className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Strong command of JavaScript (ES6+) features for building interactive, dynamic web experiences.',
-            fa: 'تسلط بالا بر JavaScript (ES6+) برای ایجاد تجربه‌های وب پویا و تعاملی.',
+            fa: 'تسلط بالا بر ویژگی‌های JavaScript (ES6+) برای ایجاد تجربه‌های وب تعاملی، داینامیک و کارآمد.',
         },
     },
     {
@@ -195,7 +195,7 @@ export const skills = [
         icon: <FaHtml5 className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Solid foundation in HTML5 and CSS3 for building semantic, accessible, and responsive layouts.',
-            fa: 'پایه قوی در HTML5 و CSS3 برای ساخت صفحات معنایی، دسترس‌پذیر و واکنش‌گرا.',
+            fa: 'تسلط قوی بر HTML5 و CSS3 برای ساخت چیدمان‌های معنایی، دسترس‌پذیر و واکنش‌گرا با رعایت اصول استاندارد.',
         },
     },
     {
@@ -204,7 +204,7 @@ export const skills = [
         icon: <SiJquery  className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Experienced with jQuery for DOM manipulation and legacy project maintenance.',
-            fa: 'تجربه در jQuery برای دستکاری DOM و نگهداری پروژه‌های قدیمی.',
+            fa: 'تجربه در کار با jQuery برای دستکاری DOM و نگهداری پروژه‌های قدیمی در محیط‌های توسعه مدرن.',
         },
     },
 
@@ -215,7 +215,7 @@ export const skills = [
         icon: <FaGitAlt className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Proficient in Git version control and GitHub workflows for collaboration and project management.',
-            fa: 'تسلط بر Git و گردش‌کار GitHub برای همکاری و مدیریت پروژه‌ها.',
+            fa: 'تسلط کامل بر Git و گردش‌کار GitHub برای همکاری تیمی، مدیریت نسخه‌ها و توسعه ساخت‌یافته پروژه‌ها.',
         },
     },
     {
@@ -224,7 +224,7 @@ export const skills = [
         icon: <SiWebstorm className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Efficient workflow using VSCode and WebStorm for debugging and code productivity.',
-            fa: 'جریان کاری بهینه با استفاده از VSCode و WebStorm برای دیباگ و افزایش بهره‌وری کد.',
+            fa: 'افزایش بهره‌وری در کدنویسی و دیباگ از طریق گردش‌کار بهینه با استفاده از VSCode و WebStorm.',
         },
     },
     {
@@ -233,7 +233,7 @@ export const skills = [
         icon: <SiPostman className='h-16 w-16 text-emerald-500' />,
         text: {
             en: 'Testing APIs and validating endpoints efficiently with Postman.',
-            fa: 'تست APIها و بررسی endpointها به‌صورت سریع و کارآمد با Postman.',
+            fa: 'تست کارآمد API ها و بررسی endpoint ها با استفاده از Postman برای اطمینان از صحت و عملکرد درخواست‌ها.',
         },
     },
 ];
