@@ -26,7 +26,7 @@ const SectionTitle = ({ text, showLangButton = false, id }: SectionTitleProps) =
                    bg-emerald-500 hover:bg-emerald-600 text-white
                    shadow-md hover:shadow-lg hover:scale-105 active:scale-95
                    focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 animate-pulse-scale
-                   dark:focus:ring-offset-slate-900"
+                   dark:focus:ring-offset-slate-900 rtl-text"
                     aria-label={lang === 'fa' ? 'Switch to Persian' : 'Switch to English'}
                 >
                     {lang === 'fa' ? 'Coder & Creative' : 'کـد نـویس و خـلاق'}
