@@ -4,7 +4,7 @@ import {projects} from "@/data/Data";
 import {useAppContext} from "@/contexts/GlobalContext";
 
 
-export default function ProjectsPage() {
+export default function ProjectsPageDep() {
     const {lang}=useAppContext()
     return (
         <main className="max-w-7xl bg-[#555555] mt-5 rounded-3xl mx-auto px-4 py-12">

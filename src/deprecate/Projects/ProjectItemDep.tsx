@@ -2,7 +2,7 @@
 import Link from "next/link";
 import {ProjectItemProps} from "@/types/ProjectType";
 
-export default function ProjectItem({
+export default function ProjectItemDep({
                                         title,
                                         description,
                                         demoUrl,

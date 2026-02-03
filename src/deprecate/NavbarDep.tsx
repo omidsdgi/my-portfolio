@@ -5,7 +5,7 @@ import ThemeToggle from "@/components/ui/ThemeToggles";
 
 const navItems = [
     { href: "#about", label: "درباره من" },
-    { href: "#skills", label: "مهارت‌ها" },
+    { href: "#skillsDep", label: "مهارت‌ها" },
     { href: "/projectsPage", label: "پروژه‌ها" },
     { href: "#footer", label: "تماس" },
 ];
