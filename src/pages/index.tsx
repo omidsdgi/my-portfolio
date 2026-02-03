@@ -1,31 +1,46 @@
 import Head from "next/head";
-import {About, Hero} from "@/components";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Skills from "@/components/sections/Skills";
+import Navbar from "@/deprecate/Navbar";
+import HeroSection from "@/components/Hero-Section";
+import SkillList from "@/components/SkillList";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import AboutLinks from "@/components/AboutLinks";
 
 
 export default function Home() {
     return (
         <>
-            <Navbar />
             <Head>
-                <title>Omid Sadeghi | Front-End Developer</title>
+                <meta charSet="UTF-8" />
+                <title>Omid Sadeghi | Front-End Developer Portfolio</title>
                 <meta
                     name="description"
-                    content="Portfolio of Omid Sadeghi – Front-End Developer specializing in React, TypeScript, and Next.js."
+                    content="Portfolio of Omid Sadeghi — Front-End Developer specializing in React, TypeScript, Next.js, and modern web technologies."
                 />
+                <meta name="author" content="Omid Sadeghi" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Omid Sadeghi | Front-End Developer" />
+                <meta property="og:description" content="Front-End Developer specializing in React, Next.js, and TypeScript" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://omid-sadeghi.dev" />
+                <meta property="og:image" content="/og-image.png" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Omid Sadeghi | Front-End Developer" />
+                <meta name="twitter:description" content="Front-End Developer specializing in React, Next.js, and TypeScript" />
+                <meta name="twitter:image" content="/og-image.png" />
             </Head>
-            <main
-                className=" grid grid-cols-1 lg:grid-cols-4 min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 ">
-                <section className="lg:col-span-4 space-y-14 px-4">
-                    <Hero/>
-                    <About/>
-                    <Skills/>
-                </section>
+
+            <main className="min-h-screen">
+                <Navbar />
+                <HeroSection />
+                <SkillList />
+                <AboutLinks />
+                <Projects />
+                <Footer />
             </main>
-            <Footer />
         </>
     );
 }
-

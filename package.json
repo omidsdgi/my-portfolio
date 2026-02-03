@@ -1,7 +1,9 @@
 {
-  "name": "my-portfolio",
+  "name": "my-portfolio-omid-sadeghi",
   "version": "0.1.0",
   "private": true,
+  "description": "Portfolio website for Omid Sadeghi - Front-End Developer",
+  "author": "Omid Sadeghi <omid69sdgi@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +15,9 @@
     "next": "15.1.11",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "nanoid": "^3.3.11"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -22,5 +26,10 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
+

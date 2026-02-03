@@ -1,13 +1,15 @@
 
-import {projects} from "@/lib/projects";
 import Link from "next/link";
+import {projects} from "@/data/Data";
+import {useAppContext} from "@/contexts/GlobalContext";
 
 
-export default function ProjectsPage() {
+export default function ProjectsPageDep() {
+    const {lang}=useAppContext()
     return (
         <main className="max-w-7xl bg-[#555555] mt-5 rounded-3xl mx-auto px-4 py-12">
             <h1 className="text-5xl text-white font-quicksand font-bold mb-8 dark:text-yellow-300" >
-                <Link href="/" className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all  mr-4">&larr;</Link>
+                <Link href="/public" className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all  mr-4">&larr;</Link>
                 Projects</h1>
 
             <div className="grid md:grid-cols-2 gap-12 ">
@@ -19,7 +21,7 @@ export default function ProjectsPage() {
                         <h2 className="text-3xl text-yellow-600 font-quicksand font-bold mb-2">{p.title}</h2>
 
                         <p className="text-black font-tahoma text-lg mb-4 text-justify flex-grow dark:text-black" dir="rtl">
-                            {p.description}
+                            {p.description[lang]}
                         </p>
                         <div className="flex justify-between text-sm mt-auto pt-4 border-t border-gray-700">
                             <Link

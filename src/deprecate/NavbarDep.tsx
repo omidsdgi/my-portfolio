@@ -5,12 +5,12 @@ import ThemeToggle from "@/components/ui/ThemeToggles";
 
 const navItems = [
     { href: "#about", label: "درباره من" },
-    { href: "#skills", label: "مهارت‌ها" },
+    { href: "#skillsDep", label: "مهارت‌ها" },
     { href: "/projectsPage", label: "پروژه‌ها" },
     { href: "#footer", label: "تماس" },
 ];
 
-export default function Navbar() {
+export default function NavbarDep() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -22,7 +22,7 @@ export default function Navbar() {
             <li className="md:ml-4">
                 <ThemeToggle/>
             </li>
-                    <Link href="/" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
+                    <Link href="/public" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
                         OMID.developer
                     </Link>
 

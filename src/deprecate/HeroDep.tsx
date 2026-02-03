@@ -2,7 +2,7 @@ import {FC} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Hero: FC = () => (
+export const HeroDep: FC = () => (
     <section
         className="mx-auto bg-[#fdf2e9] dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen max-w-6xl mt-10 flex flex-col justify-evenly items-center p-6 text-center"
     >
@@ -41,13 +41,13 @@ export const Hero: FC = () => (
 
         <div className="flex flex-col sm:flex-row gap-6">
             <Link
-                href="/projectsPage"
+                href="/src/deprecate/projectsPage"
                 className="bg-yellow-600 hover:bg-yellow-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-yellow-400"
             >
                 Projects
             </Link>
             <Link
-                href="/#footer"
+                href="/public#footer"
                 className="border-2 border-yellow-600 hover:border-yellow-500 text-yellow-600 hover:text-yellow-500 font-semibold py-3 px-8 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-yellow-400"
             >
                 Contact Me
