@@ -1,5 +1,5 @@
-import {Skill} from "@/data/Data";
 import {useAppContext} from "@/contexts/GlobalContext";
+import {Skill} from "@/data/Data";
 
 const SkillsCard = ({ icon, title, text }: Skill) => {
     const { lang } = useAppContext();
@@ -10,10 +10,18 @@ const SkillsCard = ({ icon, title, text }: Skill) => {
                  border border-transparent transition-all duration-300"
         >
             {/* Icon */}
-            <div className={`mb-4 transform  group-hover:scale-110 group-hover:rotate-3 transition-all duration-300
-             ${lang === 'fa' ? 'text-right' :'text-left'}`}>
-                {icon}
+            <div
+                className={`mb-4 flex transition-all duration-300
+    ${lang === 'fa'
+                    ? 'justify-end group-hover:translate-x-2'
+                    : 'justify-start group-hover:-translate-x-2'}
+  `}
+            >
+                <div className="transform transition-transform duration-300 group-hover:scale-150 group-hover:rotate-3">
+                    {icon}
+                </div>
             </div>
+
 
             {/* Title */}
             <h4
@@ -25,8 +33,8 @@ const SkillsCard = ({ icon, title, text }: Skill) => {
 
             {/* Description */}
             <p
-                className={`text-slate-600 dark:text-slate-400 leading-relaxed flex-grow
-                   ${lang === 'fa' ? 'rtl-text text-base' : 'text-sm'}`}
+                className={`text-slate-600 dark:text-slate-400 leading-relaxed flex-grow 
+                   ${lang === 'fa' ? 'rtl-text text-base text-justify' : 'text-sm text-justify'}`}
                 dir={lang === 'fa' ? 'rtl' : 'ltr'}
             >
                 {text[lang]}
@@ -34,4 +42,4 @@ const SkillsCard = ({ icon, title, text }: Skill) => {
         </article>
     );
 };
-export default SkillsCard;
+export default SkillsCard
