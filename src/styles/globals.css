@@ -99,7 +99,7 @@
 
   /* RTL Persian Text */
   .rtl-text {
-  @apply text-right text-xl leading-relaxed text-slate-800 dark:text-slate-200;
+  @apply text-right text-base md:text-lg lg:text-xl leading-relaxed text-slate-800 dark:text-slate-200;
   direction: rtl;
   font-family: var(--font-vazir), sans-serif;
   line-height: 1.9;
