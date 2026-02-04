@@ -11,11 +11,11 @@ export const AboutSection: FC = () => {
             <div className="align-element">
                 <SectionTitle text="code and coffee" showLangButton={true} />
 
-                <div className="grid md:grid-cols-2 items-start gap-12 mt-12">
+                <div className="grid lg:grid-cols-2 items-start gap-12 mt-12">
                     {/* Image Container with Scroll */}
-                    <div className="w-full h-full md:sticky md:top-24">
+                    <div className="w-full h-full hidden lg:block md:sticky md:top-24">
                         <div
-                            className="relative overflow-y-auto rounded-2xl shadow-xl ring-1 ring-slate-200 dark:ring-slate-700 h-[70vh] md:h-[950px]">
+                            className="relative overflow-y-auto rounded-2xl shadow-xl ring-1 ring-slate-200 dark:ring-slate-700 h-[70vh] md:h-[1150px]">
                             <Image
                                 src="/image/shopping.png"
                                 alt="Shopping Project Screenshot"
@@ -72,7 +72,8 @@ export const AboutSection: FC = () => {
                             </div>
                         ) : (
                             <div
-                                className="space-y-6 text-justify font-sans text-xl leading-relaxed text-slate-700 dark:text-slate-300">
+                                className="space-y-6 text-justify font-sans text-base md:text-lg lg:text-xl  text-slate-700 dark:text-slate-300"
+                                style={{ lineHeight: 2 }}>
                                 <p>
                                     I'm a motivated front-end developer with hands-on experience in building scalable
                                     web applications using <strong
