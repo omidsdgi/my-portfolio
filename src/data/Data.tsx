@@ -244,8 +244,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/5f117766-41e1-4f31-bc99-c1f3c505094f",
         title: "The Wild Oasis",
         description: {
-            fa: "یک اپلیکیشن مدرن و واکنش‌گرا در بخش فرانت‌اند است که با React توسعه داده شده است. این داشبورد اطلاعات لحظه‌ای مربوط به رزروها، فعالیت‌های مهمانان و داده‌های فروش را از طریق نمودارها، جداول و اعلان‌های تعاملی نمایش می‌دهد...",
-            en: "A modern and responsive front-end dashboard built with React. It displays real-time booking data, guest activities, and sales analytics through interactive charts, tables, and notifications. The app supports both dark and light themes and focuses on clarity, performance, and smooth user experience for managing daily hotel operations."
+            fa: "یک داشبورد مدرن و واکنش‌گرا با React که داده‌های رزرو، فعالیت مهمانان و فروش را با نمودارها و اعلان‌های تعاملی نمایش می‌دهد.",
+            en: "A modern responsive React dashboard displaying booking data, guest activities, and sales analytics via interactive charts and notifications."
         },
         demoUrl: "https://the-wild-oasis-sigma-livid.vercel.app",
         githubUrl: "https://github.com/omidsdgi/world-wise",
@@ -255,8 +255,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/73f1a73c-001f-4724-a028-6a4aa82d00f6",
         title: "The Wild Oasis Website",
         description: {
-            fa: "وب‌سایت The Wild Oasis با فریم‌ورک Next.js (App Router) و TypeScript توسعه یافته است...",
-            en: "A Next.js (App Router) and TypeScript powered website optimized for SEO and fast performance using SSR and Static Generation. Fully responsive, modularly structured, and deployed on Vercel with attention to accessibility and clean UI design."
+            fa: "وب‌سایتی با Next.js (App Router) و TypeScript، بهینه‌سازی شده برای SEO و عملکرد سریع با SSR و Static Generation.",
+            en: "A Next.js (App Router) & TypeScript website optimized for SEO and fast performance using SSR and Static Generation."
         },
         demoUrl: "https://the-wild-oasis-website-six-zeta.vercel.app",
         githubUrl: "https://github.com/omidsdgi/the-wild-oasis-website",
@@ -266,8 +266,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/73f1a73c-001f-4724-a028-6a4aa82d00f6",
         title: "Main Project Shopping",
         description: {
-            fa: "سایت فروشگاهی مدرن با تمرکز بر تجربه کاربری و عملکرد بهینه...",
-            en: "A modern e-commerce platform built with Next.js and TypeScript, featuring product listings, category filters, and cart management via React Context. It integrates RESTful APIs, lazy loading, responsive design, and robust form validation for a seamless shopping experience."
+            fa: "سایت فروشگاهی با Next.js و TypeScript که فیلتر دسته‌بندی، لیست محصولات و مدیریت سبد خرید با React Context را پشتیبانی می‌کند.",
+            en: "A Next.js & TypeScript e-commerce platform featuring product listings, category filters, and cart management via React Context."
         },
         demoUrl: "https://main-project-shopping.vercel.app",
         githubUrl: "https://github.com/omidsdgi/main-project-shopping",
@@ -277,8 +277,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/380c25c6-7760-4c4a-9a55-9f8ab97af742",
         title: "React Quiz",
         description: {
-            fa: "React Quiz – اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript است...",
-            en: "A responsive online quiz app built with React and TypeScript. Features dynamic state management via useReducer, routing with React Router, and performance optimization with advanced hooks like useMemo and useCallback. Inspired by the Ultimate React Course (Udemy)."
+            fa: "اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript، استفاده از useReducer و بهینه‌سازی با useMemo و useCallback.",
+            en: "A responsive online quiz app with React & TypeScript, using useReducer and optimized with useMemo/useCallback."
         },
         demoUrl: "https://react-quiz-fg73.vercel.app/",
         githubUrl: "https://github.com/omidsdgi/React-Quiz",
@@ -288,8 +288,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
         title: "Fast React Pizza",
         description: {
-            fa: "Fast React Pizza یک وب‌اپلیکیشن مدرن برای شبیه‌سازی سیستم سفارش آنلاین پیتزا است...",
-            en: "A modern pizza ordering SPA built with React and Vite. Uses React Router (routes, loaders, actions) for navigation and Redux Toolkit for cart state management. Styled with Tailwind CSS and features form validation, Redux DevTools integration, and responsive layout."
+            fa: "وب‌اپلیکیشن سفارش آنلاین پیتزا با React و Vite، مدیریت سبد خرید با Redux Toolkit و طراحی واکنش‌گرا با Tailwind CSS.",
+            en: "A modern pizza ordering SPA with React & Vite, cart management via Redux Toolkit, and responsive layout using Tailwind CSS."
         },
         demoUrl: "https://fast-react-pizzas-navy.vercel.app/",
         githubUrl: "https://github.com/omidsdgi/fast-react-pizza",
@@ -299,8 +299,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
         title: "React Weather App",
         description: {
-            fa: "یک اپلیکیشن واکنش‌گرا برای نمایش اطلاعات آب‌وهوا با استفاده از OpenWeather API...",
-            en: "A responsive weather app built with React and TypeScript that fetches data from the OpenWeather API. Displays current temperature, humidity, wind speed, and sky condition with animated weather icons for a delightful user experience."
+            fa: "اپلیکیشن آب‌وهوا با React و TypeScript که اطلاعات را از OpenWeather API دریافت می‌کند و با آیکون‌های انیمیشنی نمایش می‌دهد.",
+            en: "A React & TypeScript weather app fetching data from OpenWeather API, displaying animated weather icons."
         },
         demoUrl: "https://weather-api-ihbu.vercel.app",
         githubUrl: "https://github.com/omidsdgi/weather-api",
@@ -310,8 +310,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
         title: "usePopcorn",
         description: {
-            fa: "usePopcorn یک برنامه تک-صفحه‌ای است که با ‎create-react-app ساخته شده...",
-            en: "A single-page React app built with Create React App that allows users to search movies via the OMDb API. Implements custom hooks (useMovies, useLocalStorageState), handles fetch aborts, and persists watched lists locally for offline access."
+            fa: "اپلیکیشن تک‌صفحه‌ای برای جستجوی فیلم با OMDb API، با هوک‌های سفارشی و ذخیره‌سازی محلی لیست مشاهده‌شده‌ها.",
+            en: "A SPA for searching movies via OMDb API, with custom hooks and local storage for watched lists."
         },
         demoUrl: "https://movie-watch-list-gull.vercel.app",
         githubUrl: "https://github.com/omidsdgi/movieWatchList",
@@ -321,8 +321,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
         title: "Natours Project",
         description: {
-            fa: "پروژه Natours یک وب‌سایت فرانت‌اند حرفه‌ای است که با استفاده از Sass و ویژگی‌های مدرن CSS...",
-            en: "A professional front-end website built entirely with Sass and modern CSS (Flexbox, Grid, Animations, Transitions). Uses the 7-1 Sass architecture and BEM methodology for clean, maintainable, and scalable CSS code. Fully responsive and animation-rich without JS frameworks."
+            fa: "وب‌سایت فرانت‌اند حرفه‌ای با Sass و CSS مدرن (Flexbox, Grid, Animations)، معماری 7-1 Sass و روش BEM.",
+            en: "A professional front-end website built with Sass & modern CSS (Flexbox, Grid, Animations), using 7-1 Sass architecture and BEM methodology."
         },
         demoUrl: "https://natours-project-orpin.vercel.app/",
         githubUrl: "https://github.com/omidsdgi/Natours-project",
@@ -332,8 +332,8 @@ export const projects: Project[] = [
         img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
         title: "Omnio Food",
         description: {
-            fa: "Omnio Food یک وب‌سایت استاتیک سفارش غذاست که به‌طور کامل با HTML5 و CSS3 پیاده‌سازی شده...",
-            en: "A fully static food-ordering website built with pure HTML5, CSS3, and minimal JavaScript for navigation and interactivity. Designed with Flexbox and Grid for responsive layouts, CSS animations for hover/fade effects, and optimized assets for fast load times."
+            fa: "وب‌سایت استاتیک سفارش غذا با HTML5 و CSS3، طراحی واکنش‌گرا با Flexbox و Grid و انیمیشن‌های CSS.",
+            en: "A fully static food-ordering website built with HTML5 & CSS3, responsive layout using Flexbox and Grid, with CSS animations."
         },
         demoUrl: "https://omnio-food-project.vercel.app/",
         githubUrl: "https://github.com/omidsdgi/omnio-food",
