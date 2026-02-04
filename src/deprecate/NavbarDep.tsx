@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "@/components/ui/ThemeToggles";
 
 const navItems = [
     { href: "#about", label: "درباره من" },
@@ -20,7 +19,6 @@ export default function NavbarDep() {
             <nav className="mx-auto max-w-5xl px-4">
                 <div className="flex items-center justify-between h-16">
             <li className="md:ml-4">
-                <ThemeToggle/>
             </li>
                     <Link href="/public" className="text-2xl font-bold tracking-tight  text-yellow-600 dark:text-yellow-400">
                         OMID.developer
