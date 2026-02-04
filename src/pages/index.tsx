@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "@/deprecate/Navbar";
-import HeroSection from "@/components/Hero-Section";
+import Hero from "@/components/Hero";
 import SkillList from "@/components/SkillList";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import AboutLinks from "@/components/AboutLinks";
+import About from "@/components/About";
+import Navbar from "@/components/Navbar";
 
 
 export default function Home() {
@@ -35,9 +35,9 @@ export default function Home() {
 
             <main className="min-h-screen">
                 <Navbar />
-                <HeroSection />
+                <Hero />
                 <SkillList />
-                <AboutLinks />
+                <About />
                 <Projects />
                 <Footer />
             </main>
