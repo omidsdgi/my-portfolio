@@ -30,8 +30,8 @@
 
 ---
 
-### 📌 3. Fixed Navbar
-- ✅ **Navbar ثابت در بالای صفحه** با `position: fixed`
+### 📌 3. Fixed NavbarDep
+- ✅ **NavbarDep ثابت در بالای صفحه** با `position: fixed`
 - ✅ **Blur Effect** هنگام اسکرول
 - ✅ **Smooth Scroll** برای navigation links
 - ✅ **Offset اتوماتیک** برای جلوگیری از پنهان شدن محتوا زیر navbar
@@ -70,7 +70,7 @@ const handleSmoothScroll = (e: React.MouseEvent, href: string) => {
 
 ---
 
-### 🖼️ 5. About Section Image Height Fix
+### 🖼️ 5. AboutDep Section Image Height Fix
 - ✅ **تصویر Sticky** در دسکتاپ - همیشه قابل مشاهده
 - ✅ **max-height محدود** برای جلوگیری از بزرگی بیش از حد
 - ✅ **Aspect Ratio حفظ شده** در تمام سایزها
@@ -89,7 +89,7 @@ const handleSmoothScroll = (e: React.MouseEvent, href: string) => {
 
 ### 🔧 6. مشکلات Critical رفع شده
 
-#### ❌ مشکل: Dark Mode Button در Navbar
+#### ❌ مشکل: Dark Mode Button در NavbarDep
 **قبل:**
 ```typescript
 <button onClick={document.documentElement.classList.toggle('dark')}>
@@ -150,8 +150,8 @@ const handleSmoothScroll = (e: React.MouseEvent, href: string) => {
 ```
 project-root/
 ├── components/
-│   ├── Navbar.tsx
-│   ├── HeroSection.tsx
+│   ├── NavbarDep.tsx
+│   ├── Hero.tsx
 │   ├── AboutSection.tsx
 │   ├── SkillList.tsx
 │   ├── SkillCard.tsx
@@ -240,10 +240,10 @@ const { lang, toggleLang } = useLangContext();
 - [x] تنظیم تم Slate & Emerald
 - [x] Dark Mode با System Detection
 - [x] بهترین فونت‌ها (Inter, Poppins, Vazir)
-- [x] Navbar ثابت در بالای صفحه
+- [x] NavbarDep ثابت در بالای صفحه
 - [x] Smooth Scroll برای NavLinks
 - [x] نوشته‌های فارسی راست‌چین و کشیده
-- [x] مدیریت ارتفاع تصویر About
+- [x] مدیریت ارتفاع تصویر AboutDep
 - [x] رفع مشکلات encoding
 - [x] حذف hardcoded dark class
 - [x] استفاده از ThemeToggle component
