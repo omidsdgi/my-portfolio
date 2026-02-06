@@ -296,7 +296,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/a35c48d0-9838-4b00-8b22-055788cc431d",
+        img: "https://github.com/user-attachments/assets/41a536c1-664c-4708-aebf-d070773bc48c",
         title: "React Weather App",
         description: {
             fa: "اپلیکیشن آب‌وهوا با React و TypeScript که اطلاعات را از OpenWeather API دریافت می‌کند و با آیکون‌های انیمیشنی نمایش می‌دهد.",
