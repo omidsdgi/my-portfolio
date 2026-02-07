@@ -35,8 +35,8 @@ const Navbar = () => {
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
        ${isScrolled
-                ? 'bg-slate-400/95 dark:bg-slate-800/95 backdrop-blur-md shadow-md'
-                : 'bg-slate-300/90 dark:bg-slate-800/90 backdrop-blur-sm'
+                ? 'bg-slate-300/95 dark:bg-slate-800/95 backdrop-blur-md shadow-md'
+                : 'bg-slate-200/90 dark:bg-slate-800/90 backdrop-blur-sm'
             }
 `}
         >
