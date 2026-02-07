@@ -241,7 +241,7 @@ export const skills = [
 export const projects: Project[] = [
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/5f117766-41e1-4f31-bc99-c1f3c505094f",
+        img: "/images/wild-oasis.png",
         title: "The Wild Oasis",
         description: {
             fa: "یک داشبورد مدرن و واکنش‌گرا با React که داده‌های رزرو، فعالیت مهمانان و فروش را با نمودارها و اعلان‌های تعاملی نمایش می‌دهد.",
@@ -252,7 +252,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/73f1a73c-001f-4724-a028-6a4aa82d00f6",
+        img: "/images/wild-oasis-website.png",
         title: "The Wild Oasis Website",
         description: {
             fa: "وب‌سایتی با Next.js (App Router) و TypeScript، بهینه‌سازی شده برای SEO و عملکرد سریع با SSR و Static Generation.",
@@ -263,18 +263,18 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/73f1a73c-001f-4724-a028-6a4aa82d00f6",
-        title: "Main Project Shopping",
+        img:"/images/grocery-shop.png",
+        title: "The grocery shop",
         description: {
             fa: "سایت فروشگاهی با Next.js و TypeScript که فیلتر دسته‌بندی، لیست محصولات و مدیریت سبد خرید با React Context را پشتیبانی می‌کند.",
             en: "A Next.js & TypeScript e-commerce platform featuring product listings, category filters, and cart management via React Context."
         },
-        demoUrl: "https://main-project-shopping.vercel.app",
-        githubUrl: "https://github.com/omidsdgi/main-project-shopping",
+        demoUrl: "https://the-grocery-shop-website.vercel.app/",
+        githubUrl: "https://github.com/omidsdgi/the-grocery-shop-website",
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/380c25c6-7760-4c4a-9a55-9f8ab97af742",
+        img: "/images/react-quiz.png",
         title: "React Quiz",
         description: {
             fa: "اپلیکیشن آزمون آنلاین واکنش‌گرا با React و TypeScript، استفاده از useReducer و بهینه‌سازی با useMemo و useCallback.",
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
+        img: "/images/fast-react-pizza.png",
         title: "Fast React Pizza",
         description: {
             fa: "وب‌اپلیکیشن سفارش آنلاین پیتزا با React و Vite، مدیریت سبد خرید با Redux Toolkit و طراحی واکنش‌گرا با Tailwind CSS.",
@@ -296,7 +296,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/41a536c1-664c-4708-aebf-d070773bc48c",
+        img: "/images/weather.png",
         title: "React Weather App",
         description: {
             fa: "اپلیکیشن آب‌وهوا با React و TypeScript که اطلاعات را از OpenWeather API دریافت می‌کند و با آیکون‌های انیمیشنی نمایش می‌دهد.",
@@ -307,7 +307,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
+        img: "/images/use-popcorn.png",
         title: "usePopcorn",
         description: {
             fa: "اپلیکیشن تک‌صفحه‌ای برای جستجوی فیلم با OMDb API، با هوک‌های سفارشی و ذخیره‌سازی محلی لیست مشاهده‌شده‌ها.",
@@ -318,7 +318,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
+        img: "/images/natours.png",
         title: "Natours Project",
         description: {
             fa: "وب‌سایت فرانت‌اند حرفه‌ای با Sass و CSS مدرن (Flexbox, Grid, Animations)، معماری 7-1 Sass و روش BEM.",
@@ -329,7 +329,7 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
-        img: "https://github.com/user-attachments/assets/56de1f46-a2d1-4c41-8a2e-c9d1f97ef07b",
+        img:'/images/omnio-food.png' ,
         title: "Omnio Food",
         description: {
             fa: "وب‌سایت استاتیک سفارش غذا با HTML5 و CSS3، طراحی واکنش‌گرا با Flexbox و Grid و انیمیشن‌های CSS.",
