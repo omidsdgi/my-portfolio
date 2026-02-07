@@ -97,7 +97,7 @@ const Hero = () => {
                            ring-4 ring-white dark:ring-slate-500 shadow-2xl"
                             >
                                 <Image
-                                    src="/image/Omid.png"
+                                    src="/images/Omid.png"
                                     alt="Omid Sadeghi - Front-End Developer"
                                     width={400}
                                     height={400}

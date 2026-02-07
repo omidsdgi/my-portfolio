@@ -17,7 +17,7 @@ export const AboutSection: FC = () => {
                         <div
                             className="relative overflow-y-auto rounded-2xl shadow-xl ring-1 ring-slate-200 dark:ring-slate-700 h-[70vh] md:h-[1150px]">
                             <Image
-                                src="/image/shopping.png"
+                                src="/images/shopping.png"
                                 alt="Shopping Project Screenshot"
                                 width={800}
                                 height={1200}
