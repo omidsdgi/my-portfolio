@@ -1,49 +1,61 @@
-import {createContext, ReactNode, useContext, useEffect, useState} from "react";
-
-interface Props {
-    children: ReactNode;
-}
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 
 export type Language = "en" | "fa";
-export type theme= "light" | "dark";
+export type ThemeName = "winter" | "dracula";
 
 export interface AppContextType {
     lang: Language;
     setLang: (lang: Language) => void;
     toggleLang: () => void;
 
-    theme: theme;
+    theme: ThemeName;
+    isDark: boolean;
     toggleTheme: () => void;
 }
+
+interface Props {
+    children: ReactNode;
+}
+
+const themes = {
+    winter: "winter",
+    dracula: "dracula",
+} as const;
+
+/**  تعیین تم از localStorage یا سیستم کاربر */
+const getInitialTheme = (): ThemeName => {
+    if (typeof window === "undefined") return themes.winter;
+
+    const storedTheme = localStorage.getItem("theme") as ThemeName | null;
+    if (storedTheme && Object.values(themes).includes(storedTheme)) return storedTheme;
+
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return prefersDark ? themes.dracula : themes.winter;
+};
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider = ({ children }: Props) => {
     const [lang, setLang] = useState<Language>("en");
-    const [theme, setTheme] = useState<theme>("light");
+    const [theme, setTheme] = useState<ThemeName>(getInitialTheme);
 
-    useEffect(() => {
-        const stored = localStorage.getItem("theme") as theme | null;
-        const initial=stored ?? 'light'
-        setTheme(initial)
-        document.documentElement.classList.add(initial);
-    }, []);
-
-    useEffect(() => {
-        const root = document.documentElement;
-        root.classList.remove (theme === 'light' ? 'dark' : 'light');
-        root.classList.add (theme);
-        localStorage.setItem("theme", theme);
-    }, [theme]);
+    const isDark = theme === themes.dracula;
 
     const toggleTheme = () => {
-        setTheme((prev)=>prev === 'light' ? 'dark' : 'light');
-    }
+        setTheme((prev) => (prev === themes.winter ? themes.dracula : themes.winter));
+    };
+
     const toggleLang = () => {
         setLang((prev) => (prev === "en" ? "fa" : "en"));
     };
+
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+    }, [theme]);
+
     return (
-        <AppContext.Provider value={{ lang, setLang, toggleLang, theme, toggleTheme  }}>
+        <AppContext.Provider value={{ lang, setLang, toggleLang, theme, isDark, toggleTheme }}>
             {children}
         </AppContext.Provider>
     );
@@ -51,8 +63,6 @@ export const AppProvider = ({ children }: Props) => {
 
 export const useAppContext = () => {
     const context = useContext(AppContext);
-    if (!context) {
-        throw new Error("useAppContext must be used within an AppProvider");
-    }
+    if (!context) throw new Error("useAppContext must be used within an AppProvider");
     return context;
 };
