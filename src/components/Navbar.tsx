@@ -1,21 +1,22 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { BsFillMoonFill, BsSunFill} from "react-icons/bs";
 import NavLinks from "./NavLinks";
 import {useAppContext} from "@/contexts/GlobalContext";
 
-const Navbar = () => {
-    const { theme, toggleTheme } = useAppContext();
+
+ const Navbar = () => {
+    const { toggleTheme, isDark } = useAppContext();
     const [isScrolled, setIsScrolled] = useState(false);
 
-    // تغییر استایل نوبار هنگام اسکرول
+    // کنترل استایل نوار هنگام اسکرول
     useEffect(() => {
         const handleScroll = () => setIsScrolled(window.scrollY > 20);
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // تابع اسکرول نرم برای لینک‌های داخلی موبایل
+    // اسکرول نرم برای لینک‌های داخلی (موبایل)
     const handleSmoothScroll = (
         e: React.MouseEvent<HTMLAnchorElement>,
         targetId: string
@@ -36,8 +37,8 @@ const Navbar = () => {
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
                 isScrolled
-                    ? "bg-primary backdrop-blur-md shadow-md"
-                    : "bg-primary backdrop-blur-sm"
+                    ? "bg-base-300/80 backdrop-blur-md shadow-md"
+                    : "bg-base-300/60 backdrop-blur-sm"
             }`}
         >
             <div className="navbar align-element">
@@ -55,34 +56,36 @@ const Navbar = () => {
 
                 {/* Desktop Nav Links */}
                 <div className="navbar-center">
-                    <ul className=" hidden md:flex flex-wrap items-center xl:gap-8 ">
-                        <NavLinks  onSmoothScroll={handleSmoothScroll}/>
+                    <ul className="hidden md:flex flex-wrap items-center xl:gap-8">
+                        <NavLinks onSmoothScroll={handleSmoothScroll} />
                     </ul>
                 </div>
 
                 {/* Theme Toggle */}
                 <div className="navbar-end">
-                    <button
-                        onClick={toggleTheme}
-                        className="flex items-center gap-x-2 px-3 py-2 rounded-lg bg-emerald-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 hover:scale-105 transition-all duration-200"
-                        aria-label="Toggle Dark Mode"
-                    >
-                        {theme === "light" ? <BsFillMoonFill /> : <BsFillSunFill />}
-                        <span className="hidden sm:inline text-sm font-medium">
-              {theme === "light" ? "Dark" : "Light"}
-            </span>
-                    </button>
+                    <label className="swap swap-rotate">
+                        <input
+                            type="checkbox"
+                            onChange={toggleTheme}
+                            checked={isDark}
+                            readOnly
+                        />
+                        {/* آیکون روشن */}
+                        <BsSunFill className="h-5 w-5 swap-on text-yellow-400" />
+                        {/* آیکون تاریک */}
+                        <BsFillMoonFill className="h-5 w-5 swap-off text-blue-400" />
+                    </label>
                 </div>
             </div>
 
-            {/* Mobile Navigation (expanded below navbar) */}
-            <div className="md:hidden navbar-center border-t border-base-300  ">
-                <div className="align-element py-4 flex flex-wrap gap-4 justify-center ">
-                       <NavLinks  onSmoothScroll={handleSmoothScroll}/>
+            {/* Mobile Nav */}
+            <div className="md:hidden navbar-center border-t border-base-300">
+                <div className="align-element py-4 flex flex-wrap gap-4 justify-center">
+                    <NavLinks onSmoothScroll={handleSmoothScroll} />
                 </div>
             </div>
         </nav>
-);
+    );
 };
 
 export default Navbar;
