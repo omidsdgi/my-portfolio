@@ -76,8 +76,7 @@ const Hero = () => {
                             />
 
                             {/* Image Wrapper */}
-                            <figure
-                                className="relative z-10 overflow-hidden mask mask-squircle ring ring-base-300 ring-offset-2 ring-offset-base-100">
+                            <figure className="inline-block mask mask-squircle overflow-hidden shadow-xl bg-base-100">
                                 <Image
                                     src="/images/Omid.png"
                                     alt="Omid Sadeghi - Front-End Developer"
