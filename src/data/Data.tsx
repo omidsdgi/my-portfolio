@@ -1,5 +1,21 @@
 import {FaReact,FaJs,FaGitAlt,FaHtml5,FaFigma,} from 'react-icons/fa';
-import {SiNextdotjs,SiRedux,SiTailwindcss,SiTypescript,SiSupabase,SiBootstrap,SiSass,SiVercel ,SiJquery ,SiPostman,SiWebstorm,SiAxios,SiReactrouter, SiVite} from 'react-icons/si';
+import {
+    SiNextdotjs,
+    SiRedux,
+    SiTailwindcss,
+    SiTypescript,
+    SiSupabase,
+    SiBootstrap,
+    SiSass,
+    SiVercel,
+    SiJquery,
+    SiPostman,
+    SiWebstorm,
+    SiAxios,
+    SiReactrouter,
+    SiVite,
+    SiDaisyui
+} from 'react-icons/si';
 
 import {nanoid} from "nanoid";
 import { ReactNode } from "react";
@@ -140,6 +156,15 @@ export const skills = [
         text: {
             en: 'Creating modern, responsive, and clean UIs rapidly using TailwindCSS utility classes.',
             fa: 'ساخت سریع رابط‌های کاربری مدرن، واکنش‌گرا و تمیز با بهره‌گیری از کلاس‌های ابزاری TailwindCSS.',
+        },
+    },
+    {
+        id: nanoid(),
+        title: 'DaisyUI',
+        icon: <SiDaisyui className='h-16 w-16 text-pink-500' />,
+        text: {
+            en: 'Enhancing TailwindCSS with accessible, ready-to-use components for faster and consistent UI development.',
+            fa: 'گسترش قابلیت‌های TailwindCSS با افزودن کامپوننت‌های آماده و دسترس‌پذیر برای توسعه سریع‌تر و یکنواخت رابط‌های کاربری.',
         },
     },
     {
