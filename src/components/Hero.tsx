@@ -2,7 +2,7 @@ import { FaGithubSquare, FaTelegram } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
- const Hero = () => {
+const Hero = () => {
     return (
         <section
             id="home"
@@ -40,7 +40,8 @@ import Image from "next/image";
                                 aria-label="Visit GitHub profile"
                                 className="btn btn-ghost btn-circle shadow-md hover:shadow-xl hover:scale-105 transition-all"
                             >
-                                <FaGithubSquare className="w-7 h-7 text-base-content hover:text-primary transition-colors" />
+                                <FaGithubSquare
+                                    className="w-7 h-7 text-base-content hover:text-primary transition-colors"/>
                             </Link>
 
                             {/* Telegram */}
@@ -51,7 +52,7 @@ import Image from "next/image";
                                 aria-label="Contact via Telegram"
                                 className="btn btn-ghost btn-circle shadow-md hover:shadow-xl hover:scale-105 transition-all"
                             >
-                                <FaTelegram className="w-7 h-7 text-base-content hover:text-primary transition-colors" />
+                                <FaTelegram className="w-7 h-7 text-base-content hover:text-primary transition-colors"/>
                             </Link>
 
                             {/* Contact Button */}
@@ -66,21 +67,26 @@ import Image from "next/image";
 
                     {/* ==================== IMAGE ==================== */}
                     <article className="hidden md:flex justify-center items-center animate-fadeIn">
-                        <div className="relative group">
+                        <div
+                            className="relative group card bg-base-200 shadow-2xl rounded-box p-4 transition-all duration-500 hover:shadow-primary/40 hover:scale-105">
                             {/* Background Gradient Halo */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-t-full rounded-br-full blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500" />
+                            <div
+                                className="absolute inset-0 bg-gradient-to-br from-primary to-secondary
+                                rounded-box blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                            />
 
-                            {/* Main Image Wrapper */}
-                            <div className="relative overflow-hidden rounded-t-full rounded-br-full ring-4 ring-base-100 shadow-2xl">
+                            {/* Image Wrapper */}
+                            <figure
+                                className="relative z-10 overflow-hidden mask mask-squircle ring ring-base-300 ring-offset-2 ring-offset-base-100">
                                 <Image
                                     src="/images/Omid.png"
                                     alt="Omid Sadeghi - Front-End Developer"
                                     width={400}
                                     height={400}
                                     priority
-                                    className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                                 />
-                            </div>
+                            </figure>
                         </div>
                     </article>
                 </div>
