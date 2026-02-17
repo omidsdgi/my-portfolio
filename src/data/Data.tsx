@@ -285,6 +285,17 @@ export const projects: Project[] = [
     },
     {
         id: nanoid(),
+        img: "/images/mix-master.png",
+        title: "MixMaster",
+        description: {
+            fa: "اپلیکیشن جستجو و نمایش نوشیدنی‌ها با استفاده از TheCocktailDB API، ساخته‌شده با React، TypeScript و React Query برای کشینگ و بارگذاری سریع.",
+            en: "A cocktail search and discovery app built with React, TypeScript, and React Query, featuring prefetching and caching with TheCocktailDB API."
+        },
+        demoUrl: "https://mix-master-bice.vercel.app",
+        githubUrl: "https://github.com/omidsdgi/MixMaster"
+    },
+    {
+        id: nanoid(),
         img: "/images/fast-react-pizza.png",
         title: "Fast React Pizza",
         description: {
