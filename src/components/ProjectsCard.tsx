@@ -10,10 +10,10 @@ const ProjectCard = ({ img, demoUrl, githubUrl, title, description }: Project) =
 
     return (
         <article
-            className="card group overflow-hidden flex flex-col h-full"
+            className="card bg-base-100 shadow-md hover:shadow-xl transition-shadow duration-300 group overflow-hidden flex flex-col h-full border border-base-300"
         >
             {/* Image */}
-            <div className="relative h-56 overflow-hidden">
+            <div className="relative h-56 overflow-hidden rounded-t-xl">
                 <Image
                     src={img}
                     alt={title}
@@ -21,14 +21,14 @@ const ProjectCard = ({ img, demoUrl, githubUrl, title, description }: Project) =
                     height={300}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             {/* Content */}
-            <div className="p-6 flex flex-col flex-grow">
+            <div className="card-body p-6 flex flex-col flex-grow">
                 {/* Title */}
                 <h2
-                    className={`text-xl font-bold mb-3 text-slate-900 dark:text-slate-50
+                    className={`card-title text-xl font-bold mb-2 text-base-content
                      ${lang === 'fa' ? 'text-right font-vazir' : 'text-left'}`}
                 >
                     {title}
@@ -36,7 +36,7 @@ const ProjectCard = ({ img, demoUrl, githubUrl, title, description }: Project) =
 
                 {/* Description */}
                 <p
-                    className={`text-slate-600 dark:text-slate-400 leading-relaxed mb-6 flex-grow line-clamp-4
+                    className={`text-base-content/70 leading-relaxed mb-6 flex-grow line-clamp-4
                      ${lang === 'fa' ? 'rtl-text text-base text-justify' : 'text-sm text-justify'}`}
                     dir={lang === 'fa' ? 'rtl' : 'ltr'}
                 >
@@ -44,13 +44,12 @@ const ProjectCard = ({ img, demoUrl, githubUrl, title, description }: Project) =
                 </p>
 
                 {/* Links */}
-                <div className="flex items-center gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-4 pt-4 border-t border-base-300">
                     <Link
                         href={demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group/link flex items-center gap-2 text-slate-600 dark:text-slate-400
-                     hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                        className="btn btn-ghost btn-sm gap-2 text-base-content/70 hover:text-primary transition-colors"
                         aria-label={`View ${title} demo`}
                     >
                         <TbWorldWww className="w-6 h-6" />
@@ -61,8 +60,7 @@ const ProjectCard = ({ img, demoUrl, githubUrl, title, description }: Project) =
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group/link flex items-center gap-2 text-slate-600 dark:text-slate-400
-                     hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                        className="btn btn-ghost btn-sm gap-2 text-base-content/70 hover:text-primary transition-colors"
                         aria-label={`View ${title} source code`}
                     >
                         <FaGithubSquare className="w-6 h-6" />
