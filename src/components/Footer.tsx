@@ -32,7 +32,7 @@ export default function Footer() {
                             href="tel:+989112558264"
                             className="flex items-center gap-3 text-base-content/70 hover:text-primary transition-colors group"
                         >
-                            <Send className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                            <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
                             <span className="text-sm">0911 255 8264</span>
                         </a>
 
